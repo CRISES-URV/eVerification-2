@@ -6,7 +6,8 @@ Title: TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Elect
 Jordi Pujol-Ahulló, Roger Jardí-Cedó, Jordi Castellà-Roca, and Oriol Farràs
 Departament d’Enginyeria en Inform`atica i Matem`atiques
 Av. Pa¨ısos Catalans, 26, ES43007, Tarragona, Spain
-jordi.pujol,roger.jardi,jordi.castella,oriol.farras@urv.cat
+jordi.pujol, roger.jardi, jordi.castella, oriol.farras@urv.cat
+
 http://crises2-deim.urv.cat/docs/publications/conferences/656.pdf
 
 Summary: The private key of electronic elections is a very critical piece of information that, with an incorrect or improper use, may disrupt
