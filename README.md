@@ -20,6 +20,14 @@ This libraries implement the protocol described in this paper:
   Keywords: asymmetric cryptography, secret sharing scheme, JavaCards, multi-authority election scheme, e-voting
 
 
+Software
+--------
+
+This is a software framework/base for creating interactive multimedia diaries or ebooks. It runs on the Apple iOS platform and has so far been tested on iPad 1 and 2.
+The software was created for interactive diaries used in workshops in the [Jewish Museum Berlin](http://www.jmberlin.de).
 
 
+License
+-------
 
+This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
