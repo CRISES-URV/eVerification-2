@@ -29,9 +29,11 @@ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 POSSIBILITY OF SUCH DAMAGE.
 
-DEVELOPERS: Jordi Castellà, Vicenç Creus, Roger Jardí and Jordi Pujol.
+This work has benn developed within the project eVeriﬁcation2 TSI-020100-2011-39,
+leadered by Scytl Secure Electronic Voting S.A. and supported by the Spanish 
+Ministry of Industry, Commerce and Touris (through develpment program AVANZA I+D).
+We wish to thank Scytl for their support and to Ministery for the needed founding to
+carry it out.
 
-This work was supported by Scytl Secure Electronic Voting S.A. and the 
-Spanish Ministry of Science and Innovation (through project Audit Transparency 
-Voting Process IPT-430000-2010-31) and by the Spanish Ministry of Industry, 
-Commerce and Touris (through project eVeriﬁcation2 TSI-020100-2011-39).
+The Beta version of this code has benn developed by Jordi Castellà, Vicenç Creus, 
+Roger Jardí and Jordi Pujol (jordi.castella,vicenc.creus,roger.jardi,jordi.pujol@urv.cat).
