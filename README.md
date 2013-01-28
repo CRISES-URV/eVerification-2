@@ -1,5 +1,5 @@
-eVerification-2
-===============
+EVERIFICATION2
+==============
 
 eVeriﬁcation2 TSI-020100-2011-39 is a research project leaded by Scytl Secure Electronic Voting S.A.,
 with the collaboration of CRISES research group from Universitat Rovira i Virgili, and supported by 
@@ -19,6 +19,9 @@ for the distribution of the shares, and (iv) a decryption function without recon
 This solution can be useful for a typical e-voting system, speciﬁcally in the voting scheme presented by 
 Cramer et al. [1].
 
+You can find more information about these contributions and how had been desinged and implemented in the 
+conference `PAPER.PDF` presented in Foundations & Practice of Security 2011 called `TTP SmartCard-Based ElGamal 
+Cryptosystem Using Threshold Scheme for Electronic Elections` [2].
 
 
 Software
@@ -28,12 +31,8 @@ This libraries implement the protocol described in this paper:
 
   Title: TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections
   
-  Jordi Pujol-Ahulló, Roger Jardí-Cedó, Jordi Castellà-Roca, and Oriol Farràs
-  Departament d’Enginyeria en Informàtica i Matemàtiques
-  Av. Països Catalans, 26, ES43007, Tarragona, Spain
-  jordi.pujol, roger.jardi, jordi.castella, oriol.farras@urv.cat
+
   
-  http://crises2-deim.urv.cat/docs/publications/conferences/656.pdf
   
   Summary: The private key of electronic elections is a very critical piece of information that, with an incorrect or improper use, may disrupt
   the elections results. To enforce the privacy and security of the private key, secret sharing schemes (or threshold schemes) are used to generate a distributed key into several entities. In this fashion, a threshold of
@@ -82,3 +81,9 @@ multi-authority election scheme. In: Proceedings of the 16th annual internationa
 conference on Theory and application of cryptographic techniques. pp. 103{118.
 EUROCRYPT'97, Springer-Verlag, Berlin, Heidelberg (1997), http://portal.
 acm.org/citation.cfm?id=1754542.1754554
+
+[2] J. Pujol-Ahullo, R. Jardi-Cedo, J. Castella-Roca, O. Farràs , 
+"TTP SmartCard - based ElGamal Cryptosystem using Threshold Scheme for Electronic Elections ", 
+Foundations & Practice of Security 2011 - FPS 2011, Paris, France, May 2011. 
+http://crises2-deim.urv.cat/docs/publications/conferences/656.pdf
+
