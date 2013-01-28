@@ -27,8 +27,9 @@ Cryptosystem Using Threshold Scheme for Electronic Elections [2].
 Software
 --------
 
-This libraries implement the protocol described in the paper described above
+This libraries implement the protocol described in the paper described above.
 
+In the `EXTENDEDPAPER.PDF`, you can find a description of an execution example.
 
 License
 -------
