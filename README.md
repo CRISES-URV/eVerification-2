@@ -6,8 +6,7 @@ the Spanish Ministry of Industry, Commerce and Tourism (through the development 
 
 You can find more information about eVerification2 project in http://crises-deim.urv.cat/everification2
 
-TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections
-----------------------------------------------------------------------------------------
+#TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections
 
 As a result of this research project, CRISES group has studied the feasibility of developing ElGamal 
 cryptosystem and Shamir’s secret sharing scheme into JavaCards, whose API gives no support for it.
@@ -25,8 +24,7 @@ Cryptosystem Using Threshold Scheme for Electronic Elections [2]. In the `extend
 description of an execution example.
 
 
-Software
---------
+#TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme Software
 
 This library implements the protocol described in the paper described above and is prepared to execute a 
 configurable example with a maximum number of shares (n=5) and a threshold from 2 to the maximum of shares (n).
@@ -48,14 +46,12 @@ This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafé Expert 4 cards (you 
 the evaluation and conclusion sections of the `paper.pdf` and `extendedpaper.pdf`.
 
 
-License
--------
+##License
 
 This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
 
 
-Future Work
------------
+#Future Work
 
 As a future work, we are working in a non-trusted third party (Non-TTP)
 solution with a distributed generation of the shares. In addition, we would like
@@ -63,8 +59,8 @@ to improve the eﬃciency, time and storage of the protocol in smartcard (i.e.,
 using ElGamal on elliptic curves).
 
 
-Bibliography
-------------
+#Bibliography
+
 [1] Cramer, R., Gennaro, R., Schoenmakers, B.: A secure and optimally ecient
 multi-authority election scheme. In: Proceedings of the 16th annual international
 conference on Theory and application of cryptographic techniques. pp. 103{118.
