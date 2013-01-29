@@ -29,7 +29,7 @@ Software
 --------
 
 This libraries implement the protocol described in the paper described above.
-
+TODO: talk about GUI, configuration (t,n), etc.
 
 
 License
