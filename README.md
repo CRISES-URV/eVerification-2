@@ -20,7 +20,7 @@ This solution can be useful for a typical e-voting system, speciﬁcally in the 
 Cramer et al. [1].
 
 You can find more information about these contributions and how had been desinged and implemented in the 
-conference `PAPER.PDF` presented in Foundations & Practice of Security 2011 called: TTP SmartCard-Based ElGamal 
+conference `paper.pdf` presented in Foundations & Practice of Security 2011 called: TTP SmartCard-Based ElGamal 
 Cryptosystem Using Threshold Scheme for Electronic Elections [2].
 
 
@@ -29,7 +29,7 @@ Software
 
 This libraries implement the protocol described in the paper described above.
 
-In the `EXTENDEDPAPER.PDF`, you can find a description of an execution example.
+In the `extendedpaper.pdf`, you can find a description of an execution example.
 
 License
 -------
