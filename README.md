@@ -38,7 +38,7 @@ License
 This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
 
 
-Conclusions and Future Work
+Conclusions and Future Work (remove?)
 ---------------------------
 
 We developed a library for Java Cards that allows: (i) a big number storage and
