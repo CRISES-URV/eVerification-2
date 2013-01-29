@@ -43,8 +43,9 @@ In addition, it is provide with a GUI that permits execute easily the following 
 - Homomorphic Recount (in a voting context) through the aggregation of the set of partial decryptions.
 
 The code is divided in two different parts: client and applet code.
-The former part includes the GUI and the code related to manage of the protocol execution.
-The last part is the code installed into each SC.
+The former part includes the GUI and the code related to manage of the protocol execution. This part has been developed
+in Java programming language.
+The last part is the code placed/installed into each SC. It is writted in JavaCard.
 
 This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafé Expert 4 cards (you can find information of the results in
 the evaluation and conclusion sections of the `paper.pdf` and `extendedpaper.pdf`.
