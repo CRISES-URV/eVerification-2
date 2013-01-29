@@ -19,9 +19,10 @@ for the distribution of the shares, and (iv) a decryption function without recon
 This solution can be useful for a typical e-voting system, speciﬁcally in the voting scheme presented by 
 Cramer et al. [1].
 
-You can find more information about these contributions and how had been desinged and implemented in the 
+You can find more information about these contributions and how it had been desinged and implemented in the 
 conference `paper.pdf` presented in Foundations & Practice of Security 2011 called: TTP SmartCard-Based ElGamal 
-Cryptosystem Using Threshold Scheme for Electronic Elections [2].
+Cryptosystem Using Threshold Scheme for Electronic Elections [2]. In the `extendedpaper.pdf`, you can find a 
+description of an execution example.
 
 
 Software
@@ -29,7 +30,7 @@ Software
 
 This libraries implement the protocol described in the paper described above.
 
-In the `extendedpaper.pdf`, you can find a description of an execution example.
+
 
 License
 -------
