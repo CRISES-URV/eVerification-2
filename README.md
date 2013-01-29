@@ -29,7 +29,7 @@ Software
 --------
 
 This library implements the protocol described in the paper described above and is prepared to execute a 
-configurable example with a maximum number of shares (5) and a threshold from 2 to 5.
+configurable example with a maximum number of shares (n=5) and a threshold from 2 to the maximum of shares (n).
 
 In addition, it is provide with a GUI that permits execute easily the following functions implemented in the library:
 - Generate a set of shares from a SmartCard(SC) according to user configuraction (number of shares, threshold and key size).
@@ -39,7 +39,8 @@ In addition, it is provide with a GUI that permits execute easily the following 
 - Partial decrypt from each SC.
 - Homomorphic Recount (in a voting context) through the aggregation of the set of partial decryptions.
 
-This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafé Expert 4 cards.
+This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafé Expert 4 cards (you can find information of the results in
+the evaluation and conclusion sections of the `paper.pdf` and `extendedpaper.pdf`.
 
 
 License
@@ -48,21 +49,8 @@ License
 This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
 
 
-Conclusions and Future Work (remove?)
----------------------------
-
-We developed a library for Java Cards that allows: (i) a big number storage and
-representation and (ii) modular arithmetics. Next, we used the library to design
-and implement the ElGamal cryptosystem for the Java Card platform. Please,
-note that there is no support for ElGamal cryptosystem in the Java Card API
-even though it might be provided by the smartcard hardware. We completed
-the library with the development of the Shamir’s (t,n)-threshold scheme for the
-ElGamal cryptosystem. Finally, we evaluated the performance and eﬃciency
-of our implemented library on a JCOP 21 v2.2 with 72Kb of memory using
-diﬀerent key sizes. The encryption and decryption operations show a reasonable
-cost although it is not advisable to use these operations massively. The shares
-generation and veriﬁcation have a signiﬁcant cost. Nonetheless, we think that
-they are aﬀordable because they can be realized only once and before their use.
+Future Work
+-----------
 
 As a future work, we are working in a non-trusted third party (Non-TTP)
 solution with a distributed generation of the shares. In addition, we would like
