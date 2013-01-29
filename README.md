@@ -28,8 +28,18 @@ description of an execution example.
 Software
 --------
 
-This libraries implement the protocol described in the paper described above.
-TODO: talk about GUI, configuration (t,n), etc.
+This library implements the protocol described in the paper described above and is prepared to execute a 
+configurable example with a maximum number of shares (5) and a threshold from 2 to 5.
+
+In addition, it is provide with a GUI that permits execute easily the following functions implemented in the library:
+- Generate a set of shares from a SmartCard(SC) according to user configuraction (number of shares, threshold and key size).
+- Distribute the generated shares, public key, and other public parameters from that SC to the rest of SCs.
+- Verify the received share from each SC. 
+- Encrypt a value using the public ElGamal parameters.
+- Partial decrypt from each SC.
+- Homomorphic Recount (in a voting context) through the aggregation of the set of partial decryptions.
+
+This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafè Expert 4 cards.
 
 
 License
