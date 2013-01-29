@@ -39,7 +39,7 @@ In addition, it is provide with a GUI that permits execute easily the following 
 - Partial decrypt from each SC.
 - Homomorphic Recount (in a voting context) through the aggregation of the set of partial decryptions.
 
-This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafè Expert 4 cards.
+This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafé Expert 4 cards.
 
 
 License
