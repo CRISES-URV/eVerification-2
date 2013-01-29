@@ -1,4 +1,4 @@
-![Logo](eVerification-2/raw/master/figures/logoeverification2.png "Logo")
+![Logo](figures/logoeverification2.png "Logo")
 
 EVERIFICATION2
 ==============
