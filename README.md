@@ -1,4 +1,4 @@
-![Logo](css-ratiocinator/tree/master/figures/logoeverification2.jpg "Logo")
+![Logo](eVerification-2/tree/master/figures/logoeverification2.jpg "Logo")
 
 EVERIFICATION2
 ==============
