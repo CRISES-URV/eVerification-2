@@ -1,5 +1,7 @@
 ![Logo](eVerification-2/raw/master/figures/logoeverification2.png "Logo")
 
+<img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoeverification2.png" />
+
 EVERIFICATION2
 ==============
 
