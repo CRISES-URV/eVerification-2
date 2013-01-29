@@ -1,3 +1,5 @@
+![Logo](css-ratiocinator/raw/figures/logoeverification2.jpg "Logo")
+
 EVERIFICATION2
 ==============
 
