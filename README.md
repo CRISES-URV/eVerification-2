@@ -24,7 +24,7 @@ Cryptosystem Using Threshold Scheme for Electronic Elections [2]. In the `extend
 description of an execution example.
 
 
-#TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme Software
+##Software
 
 This library implements the protocol described in the paper described above and is prepared to execute a 
 configurable example with a maximum number of shares (n=5) and a threshold from 2 to the maximum of shares (n).
@@ -51,7 +51,7 @@ the evaluation and conclusion sections of the `paper.pdf` and `extendedpaper.pdf
 This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
 
 
-#Future Work
+##Future Work
 
 As a future work, we are working in a non-trusted third party (Non-TTP)
 solution with a distributed generation of the shares. In addition, we would like
