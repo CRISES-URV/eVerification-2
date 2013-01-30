@@ -52,7 +52,7 @@ The last part is the code placed/installed into each SC, which is written in Jav
 
 
 This libaray has been tested in JCOP 21 v2.2 and Sm@rtcafé Expert 4 cards (you can find information of the results in
-the evaluation and conclusion sections of the `paper.pdf` and `extendedpaper.pdf`.
+the evaluation and conclusion sections of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/paper.pdf">paper.pdf</a> and `extendedpaper.pdf`.
 
 
 ##License
