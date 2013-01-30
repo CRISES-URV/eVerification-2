@@ -1,18 +1,5 @@
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoeverification2.png" />
 
-<table>
-<tr>
-  <td>100</td>
-  <td>200</td>
-  <td>300</td>
-</tr>
-<tr>
-  <td>400</td>
-  <td>500</td>
-  <td>600</td>
-</tr>
-</table>
-
 <center><table border="0">
 <tr><td align=center valign=top><img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="300" height="100"></td>
 <td align=center valign=middle><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png></td>
