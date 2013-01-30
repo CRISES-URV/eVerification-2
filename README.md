@@ -1,5 +1,7 @@
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoeverification2.png" />
 
+<img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.jpg" />
+
 eVeriﬁcation2 TSI-020100-2011-39 is a research project leaded by Scytl Secure Electronic Voting S.A.,
 with the collaboration of CRISES research group from Universitat Rovira i Virgili, and supported by 
 the Spanish Ministry of Industry, Commerce and Tourism (through the development program AVANZA I+D).
