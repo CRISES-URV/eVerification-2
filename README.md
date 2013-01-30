@@ -8,15 +8,7 @@ You can find more information about eVerification2 project in http://crises-deim
 
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="300" height="100">
 
-<center><table border="0">
-<tr><td align=center valign=top></td>
-<td align=center valign=middle><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png></td>
-<td align=center valign=bottom>
-    <br><br><br><br><br><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoURV.png>
-</td></tr></table></center>
-
-
-<center><table>
+<center><table width=65%>
 <tr><td><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png></td>
 <td><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoURV.png></td></tr>
 </table></center>
