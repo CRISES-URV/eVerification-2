@@ -71,8 +71,8 @@ using ElGamal on elliptic curves).
 [1] Cramer, R., Gennaro, R., Schoenmakers, B.: A secure and optimally ecient
 multi-authority election scheme. In: Proceedings of the 16th annual international
 conference on Theory and application of cryptographic techniques. pp. 103{118.
-EUROCRYPT'97, Springer-Verlag, Berlin, Heidelberg (1997), http://portal.
-acm.org/citation.cfm?id=1754542.1754554
+EUROCRYPT'97, Springer-Verlag, Berlin, Heidelberg (1997), 
+http://portal.acm.org/citation.cfm?id=1754542.1754554
 
 [2] J. Pujol-Ahullo, R. Jardi-Cedo, J. Castella-Roca, O. Farràs , 
 "TTP SmartCard - based ElGamal Cryptosystem using Threshold Scheme for Electronic Elections ", 
