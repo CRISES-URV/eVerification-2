@@ -50,6 +50,9 @@ The former part includes the GUI and the code related to manage of the protocol 
 in Java programming language.
 The last part is the applet code placed/installed into each SC, which is written in JavaCard.
 
+TODO: afegir figures esquemes i output de les apdus
+
+
 You can fin more information about the implementation in the section Development Details of the `extendedpaper.pdf`
 
 ##Tests and Results
@@ -57,13 +60,14 @@ You can fin more information about the implementation in the section Development
 In order to evaluate the performance and eciency of our implemented protocol over
 JavaCards, we carried out a set of tests executing parts of the protocol into JavaCards,
 with a (3,5)-threshold. Each test has been run for 10 times on a JCOP 21 v2.2 with
-72Kb of memory [1], for a 6 dierent key sizes (512, 736, 896, 1024, 1280 and 2048 bits).
+72Kb of memory, for a 6 diferent key sizes (512, 736, 896, 1024, 1280 and 2048 bits).
 Concretely, the tests have been focused on basic protocol operations entirely executed
 on smartcard (not including the operations executed on computer) such as the (i) shares
-generation (including ElGamal key pair generation), the (i) share verication (steps 6d
+generation (including ElGamal key pair generation), the (i) share verification (steps 6d
 and 6e of electoral board constitution), the (iii) vote encryption and nally, the (iv)
 vote decryption without reconstructing the private key.
-Results appear in Fig. 5.1, where shares generation and verication costs are the
+
+Results appear in the following figure, where shares generation and verication costs are the
 highest and grow linearly together with the key size. Generating 5 shares ranges from
 5.56 to 20.10 minutes, whilst verifying a single share ranges from 1.14 to 4.26 minutes.
 Despite their important costs, they are aordable because these operations are realized
@@ -76,13 +80,13 @@ viable because votes should be decrypted one by one and, therefore, the total co
 depend linearly on the number of votes. Notice that this cost does not depend on the
 number of shares because each decryption, made in each smartcard of the electoral
 board, can be parallelized.
-As introduced in Section 4.1.1, Fig. 5.1 depicts a linear growing in time consumption
+
+As can be seen in the following figure, it depicts a linear growing in time consumption
 due to (i) the use of the cryptographic co-processor to execute the costly modular
 exponentiation with an almost constant cost, whilst (ii) the rest of modular operations
 (such as addition) have the depicted linear cost.
 
-
-
+NOTA!!! AFEGIR FIGURES GRAFIQUES
 
 You can find more information of the results in the evaluation and conclusion sections of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/paper.pdf">paper.pdf</a> and `extendedpaper.pdf`.
 
