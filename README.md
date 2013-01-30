@@ -1,5 +1,12 @@
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoeverification2.png" />
 
+<center><table width=65%>
+<tr><td align=center valign=top><img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="100" height="100"></td>
+<td align=center valign=middle><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png></td>
+<td align=center valign=bottom>
+    <br><br><br><br><br><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoURV.png>
+</td></tr></table></center>
+
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="100" height="100" />
 
 eVeriﬁcation2 TSI-020100-2011-39 is a research project leaded by Scytl Secure Electronic Voting S.A.,
