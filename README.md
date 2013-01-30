@@ -1,6 +1,6 @@
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoeverification2.png" />
 
-<center><table width=65%>
+<center><table border=0 width=65%>
 <tr><td align=center valign=top><img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="300" height="100"></td>
 <td align=center valign=middle><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png></td>
 <td align=center valign=bottom>
