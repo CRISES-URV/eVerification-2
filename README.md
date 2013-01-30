@@ -23,11 +23,11 @@ the following building blocks: (i) ElGamal cryptosystem to generate the ElGamal 
 secret sharing scheme to divide the private key in a set of shares, (iii) secure communication channels 
 for the distribution of the shares, and (iv) a decryption function without reconstructing the private key. 
 This solution can be useful for a typical e-voting system, speciﬁcally in the voting scheme presented by 
-Cramer et al. [1].
+Cramer et al. [<a href="#ref1">1</a>].
 
 You can find more information about these contributions and how it had been desinged and implemented in the 
 conference `paper.pdf` presented in Foundations & Practice of Security 2011 called: TTP SmartCard-Based ElGamal 
-Cryptosystem Using Threshold Scheme for Electronic Elections [2]. In the `extendedpaper.pdf`, you can find a 
+Cryptosystem Using Threshold Scheme for Electronic Elections [<a href="#ref2">2</a>]. In the `extendedpaper.pdf`, you can find a 
 description of an execution example.
 
 
@@ -70,13 +70,13 @@ using ElGamal on elliptic curves).
 
 #Bibliography
 
-[1] Cramer, R., Gennaro, R., Schoenmakers, B.: A secure and optimally ecient
+<a name="ref1"></a>[1] Cramer, R., Gennaro, R., Schoenmakers, B.: A secure and optimally ecient
 multi-authority election scheme. In: Proceedings of the 16th annual international
 conference on Theory and application of cryptographic techniques. pp. 103{118.
 EUROCRYPT'97, Springer-Verlag, Berlin, Heidelberg (1997), 
 http://portal.acm.org/citation.cfm?id=1754542.1754554
 
-[2] J. Pujol-Ahullo, R. Jardi-Cedo, J. Castella-Roca, O. Farràs , 
+<a name="ref2"></a>[2] J. Pujol-Ahullo, R. Jardi-Cedo, J. Castella-Roca, O. Farràs , 
 "TTP SmartCard - based ElGamal Cryptosystem using Threshold Scheme for Electronic Elections ", 
 Foundations & Practice of Security 2011 - FPS 2011, Paris, France, May 2011. 
 http://crises2-deim.urv.cat/docs/publications/conferences/656.pdf
