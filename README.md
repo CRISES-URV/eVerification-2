@@ -11,7 +11,7 @@ You can find more information about eVerification2 project in http://crises-deim
 <center><table border="0">
 <tr><td><a href="http://www.scytl.es" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png border="0"></td>
 <td><a href="http://urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoURV.png border="0"></td>
-<td><a href="http://crises-deim.urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoCrises.png border="0"></td></tr>
+<td><a href="http://crises-deim.urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoCrises.png width="100" height="50" border="0"></td></tr>
 </table></center>
 
 #TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections
