@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Macro xmlns="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="encrypt" xsi:schemaLocation="http://www.gi-de.com/offcard/gptasks/1.0 TaskFile.xsd">
+ <Tasks>
+  <SendApduTask>
+   <Command>90 0C 00 00 20 24 01 CB 45 76 A6 F9 7C 5D FF D9 60 CD 3D 7D 17 2D B9 0E 00 0E 36 E1 76 A8 A5 74 23 69 24 D9 FD 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 0C 00 00 20 01 1F 71 5E 98 40 C5 81 2F 62 16 67 D4 B5 E4 7E 97 60 F5 53 92 F0 1B 59 8F 04 60 D8 EA 89 0A 22 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 0D 00 00 00</Command>
+  </SendApduTask>
+ </Tasks>
+</Macro>

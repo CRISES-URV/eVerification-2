@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JCProjectParameters>
+ <ProjectName>thresholdLib</ProjectName>
+ <ConverterVersion>jcdk 2.2.1</ConverterVersion>
+ <SimulationType>Sm@rtCafé Expert 4.0</SimulationType>
+ <JCPackageParameters>
+  <Aid SpecificName="PackageAid">31 32 33 34 33 AA FF CA FE FF AA</Aid>
+  <JCConverterOptions>-debug -out CAP EXP</JCConverterOptions>
+  <PackageName>cat.urv.crises.smartcard.elgamal</PackageName>
+  <PackageVersion>1.0</PackageVersion>
+  <JCAppletParameters>
+   <Aid SpecificName="AppletClassAid">31 32 33 34 33 12 34 50</Aid>
+   <AppletName>ElGamalThresholdApplet</AppletName>
+  </JCAppletParameters>
+ </JCPackageParameters>
+</JCProjectParameters>

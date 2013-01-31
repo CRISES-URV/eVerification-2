@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Macro xmlns="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="tally" xsi:schemaLocation="http://www.gi-de.com/offcard/gptasks/1.0 TaskFile.xsd">
+ <Tasks>
+  <SendApduTask>
+   <Command>80 13 00 00 01 03 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>90 1D 00 00 20 89 C5 06 B1 73 E5 A7 3F 91 07 2D C9 67 0A 77 64 59 AD 73 D8 54 92 9D C0 DF 08 BD 5F 2B 27 99 13 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>90 1D 00 00 20 B5 D1 FF 5D F2 C9 C2 DF 19 B7 05 7C AA 62 E8 A4 AB D6 ED 6F F5 9C 33 07 A0 07 6F 74 A4 9D 88 0B 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>90 1D 00 00 20 66 9A 5D 5E A7 9C 6E CC 09 CC CA 32 6D FE 03 C9 27 F6 90 AB D4 28 31 0F 2E 16 B1 D3 39 B8 1E 87 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1D 00 00 20 0A 4B 39 44 5A F4 41 70 AD 50 E7 5C 04 91 DC 87 6C 50 1D 5D 6B E0 6E C5 FA 8D B1 9C 52 D4 A5 95 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 0F 00 00 00</Command>
+  </SendApduTask>
+ </Tasks>
+</Macro>
