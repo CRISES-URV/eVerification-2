@@ -27,8 +27,8 @@ This solution can be useful for a typical e-voting system, speciﬁcally in the 
 Cramer et al. [<a href="#ref1">1</a>].
 
 You can find more information about these contributions and how it had been desinged and implemented in the 
-conference `paper.pdf` presented in Foundations & Practice of Security 2011 called: TTP SmartCard-Based ElGamal 
-Cryptosystem Using Threshold Scheme for Electronic Elections [<a href="#ref2">2</a>]. In the `extendedpaper.pdf`, you can find a 
+conference <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/paper.pdf">paper.pdf</a> presented in Foundations & Practice of Security 2011 called: TTP SmartCard-Based ElGamal 
+Cryptosystem Using Threshold Scheme for Electronic Elections [<a href="#ref2">2</a>]. In the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>, you can find a 
 description of an execution example.
 
 
@@ -53,7 +53,7 @@ The last part is the applet code placed/installed into each SC, which is written
 TODO: afegir figures esquemes i output de les apdus
 
 
-You can fin more information about the implementation in the section Development Details of the `extendedpaper.pdf`
+You can fin more information about the implementation in the section Development Details of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>
 
 ##Tests and Results
 
