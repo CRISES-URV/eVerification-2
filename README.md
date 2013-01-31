@@ -88,7 +88,7 @@ exponentiation with an almost constant cost, whilst (ii) the rest of modular ope
 
 NOTA!!! AFEGIR FIGURES GRAFIQUES
 
-You can find more information of the results in the evaluation and conclusion sections of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/paper.pdf">paper.pdf</a> and `extendedpaper.pdf`.
+You can find more information of the results in the evaluation and conclusion sections of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/paper.pdf">paper.pdf</a> and <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>.
 
 
 ##License
