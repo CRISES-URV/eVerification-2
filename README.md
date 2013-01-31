@@ -93,7 +93,7 @@ You can find more information of the results in the evaluation and conclusion se
 
 ##License
 
-This software is released under BSD 3-clause license which is contained in the file `LICENSE`.
+This software is released under BSD 3-clause license which is contained in the file https://github.com/CRISES-URV/eVerification-2/blob/master/LICENSE`LICENSE`.
 
 
 ##Future Work
