@@ -4,8 +4,6 @@ eVeriﬁcation2 TSI-020100-2011-39 is a research project leaded by Scytl Secure 
 with the collaboration of CRISES research group from Universitat Rovira i Virgili, and supported by 
 the Spanish Ministry of Industry, Commerce and Tourism (through the development program AVANZA I+D).
 
-You can find more information about eVerification2 project in http://crises-deim.urv.cat/everification2
-
 <a href="https://www.planavanza.es" target="_blank"><img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="300" height="150">
 
 <center><table border="0">
@@ -13,6 +11,8 @@ You can find more information about eVerification2 project in http://crises-deim
 <td><a href="http://www.urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoURV.png border="0"></td>
 <td><a href="http://crises-deim.urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoCrises.png width="140" height="50" border="0"></td></tr>
 </table></center>
+
+You can find more information about eVerification2 project in http://crises-deim.urv.cat/everification2
 
 #TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections
 
