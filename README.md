@@ -50,7 +50,7 @@ The former part includes the GUI and the code related to manage of the protocol 
 in Java programming language.
 The last part is the applet code placed/installed into each SC, which is written in JavaCard.
 
-<!--TODO: afegir figures esquemes i output de les apdus --!>
+<!--TODO: afegir figures esquemes i output de les apdus -->
 
 
 You can fin more information about the implementation in the section Development Details of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>
