@@ -50,7 +50,62 @@ The former part includes the GUI and the code related to manage of the protocol 
 in Java programming language.
 The last part is the applet code placed/installed into each SC, which is written in JavaCard.
 
-<!--TODO: afegir figures esquemes i output de les apdus -->
+<!--TODO: afegir figures esquemes-->
+
+Once the applet has been installed, the user can execute the following utilities:
+
+1. Generation.
+    <!--TODO: afegir figures esquemes i output de les apdus de generacio-->
+    
+2. Distribution between generator smart card and slave or receiver smart card. This step is executed in each receiver smart card.
+
+		1. We have to initialize the applet. In this case, the applet identifier is 3132333433123450.
+
+		2. We have to initialize the ElGamal . For this initialization we generate the following values:
+			- p: the APDU used to generate p is: CLA=90, INS=01, P1-P2=00, Lc=20 and data=p. 
+			- q: the APDU used to generate q is: CLA=90, INS=11, P1-P2=00, Lc=20 and data=q. 
+			- g: the APDU used to generate g is: CLA=90, INS=02, P1-P2=00, Lc=20 and data=g. 
+
+		3. We have to broadcasting the particular parameters of threshold.
+			- We have to get share and share commitment from smart card (generator). The APDUs are the following:
+				- The APDU used to get share is: CLA=80, INS=19, P1= smart card identifier,P2=00.
+				- The APDU used to get share commitment is: CLA=80, INS=1C, P1= smart card identifier, P2=00.
+
+		4. We have to receiving the threshold parameters generated in the generation step. The APDUs are the following:
+			- We have to get the value of the threshold and the number of shares. In this case, the APDU is: CLA=80, INS=1e, P1=2-5,P2=3-5
+			- We have to save coefficient commitment. In this case, the APDU is: CLA=90, INS=16, P1-P2=00.
+			- We have to save the card identifier. In this case, the APDU is: CLA=80, INS=12, P1-P2=00, Lc=01 and data=id_card.
+			- We have to save own share. In this case, the APDU is: CLA=90, INS=14, P1-P2=00, Lc=20 and data=share.
+			- We have to save own share commitment. In this case, the APDU is: CLA=90, INS=17, P1-P2=00, Lc=20 and data=share commitment.
+			- We have to save the public key. In this case, the APDU is: CLA=90, INS=15, P1-P2=00, Lc=20 and data=public key.
+			- We have to generate evaluation values. In this case, the APDU is: CLA=80, INS=07, P1-P2=00.
+
+		5. We have to verify share and share commitment.
+			- The APDU used to verify share is: CLA=80, INS=A0, P1-P2=00.
+			- The APDU used to verify share commitment is: CLA=80, INS=B0, P1-P2=00.
+
+
+3. Encryption
+
+		1. We have to initialize the applet. In this case the applet identifier is 3132333433123450.
+		2. We have to send data to encrypt. In this case, the APDU is: CLA=90, INS=0C, P1-P2=00, Lc=20, Data=message to encrypt.
+		3. We have to ask for ElGamal encryption result. In this case, the APDU is: CLA=90, INS=0D, P1-P2=00.
+
+
+4. Decryption
+
+		1. We have to generate evaluation values and Lagrange coefficients.
+		2. We have to initialize the applet. In this case the applet identifier is 3132333433123450.
+		3. We have to send Lagrange coefficient. In this case, the APDU is: CLA=90, INS=13, P1= card identifier, P2=00, Lc=20 and data=Lagrange coefficient.
+		4. We have to send data to decrypt, concretely Y2 and Y1. In this case, the APDU is: CLA=90, INS=1D, P1-P2=00, Lc=20 and data=Y2+Y1.
+
+
+5. Verification
+
+		1. We have to initialize the applet. In this case the applet identifier is 3132333433123450.
+		2. We have to verify share and share commitment.
+			- The APDU used to verify share is: CLA=80, INS=A0, P1-P2=00.
+			- The APDU used to verify share commitment is: CLA=80, INS=B0, P1-P2=00.
 
 
 You can fin more information about the implementation in the section Development Details of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>
