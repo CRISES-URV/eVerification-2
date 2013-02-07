@@ -55,7 +55,33 @@ The last part is the applet code placed/installed into each SC, which is written
 Once the applet has been installed, the user can execute the following utilities:
 
 1. Generation.
-    <!--TODO: afegir figures esquemes i output de les apdus de generacio-->
+    		To generate shares is necessary to do the following steps:
+		1. We have to initialize the applet. In this case, the applet identifier is 3132333433123450.
+		2. We have to initialize the ElGamal . In this case, we generate the following values:
+			- p: the APDU used to generate p is: CLA=90, INS=01, P1-P2=00, Lc=20 and data=p. 
+			- q: the APDU used to generate q is: CLA=90, INS=11, P1-P2=00, Lc=20 and data=q. 
+			- g: the APDU used to generate g is: CLA=90, INS=02, P1-P2=00, Lc=20 and data=g. 
+
+		3. We have to build the private and public key. The APDUs are the following:
+			- public key: the APDU used to build public key is: CLA=80, INS=03, P1-P2=00.
+			- private key: the APDU used to build private key is: CLA=80, INS=04, P1-P2=00. 
+
+		4. The following step is the threshold scheme generation.
+			- We have to save the value of the threshold and  the number of shares. In this case, the APDU is: CLA=80, INS=1e, P1=2-5,P2=3-5
+			- We have to generate t-1 coefficients. In this case, the APDU is: CLA=80, INS=05, P1-P2=00.
+			- We have to generate t-1 coefficient commitments. In this case, the APDU is: CLA=80, INS=06, P1-P2=00.
+			- We have to generate the evaluation values. In this case, the APDU is: CLA=80, INS=07, P1-P2=00.
+			- We have to generate n shares. In this case, the APDU is: CLA=80, INS=08, P1-P2=00.
+			- We have to generate n shares commitments. In this case, the APDU is: CLA=80, INS=09, P1-P2=00.
+
+		5. We have to broadcasting the common parameters of threshold.
+			- We have to get coefficient commitment from the smart card. In this case, the APDU is: CLA=80, INS=1B, P1-P2=00.
+			- We have to get public key. In this case, the APDU is: CLA=80, INS=1A, P1-P2=00.
+
+		6. We have to verify share and share commitment.
+			- The APDU used to verify share is: CLA=80, INS=A0, P1-P2=00.
+			- The APDU used to verify share commitment is: CLA=80, INS=B0, P1-P2=00.
+
     
 2. Distribution between generator smart card and slave or receiver smart card. This step is executed in each receiver smart card.
 
