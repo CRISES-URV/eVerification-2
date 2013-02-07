@@ -52,11 +52,11 @@ The last part is the applet code placed/installed into each SC, which is written
 
 <!--TODO: afegir figures esquemes-->
 
-Once the applet has been installed, the user can execute the following utilities:
+Once the applet has been installed, the user can execute the following functions:
 
 1. Generation.
     		
-To generate shares is necessary to do the following steps:
+		To generate shares is necessary to do the following steps:
 		
 		1. We have to initialize the applet. In this case, the applet identifier is 3132333433123450.
 		
