@@ -55,8 +55,11 @@ The last part is the applet code placed/installed into each SC, which is written
 Once the applet has been installed, the user can execute the following utilities:
 
 1. Generation.
-    		To generate shares is necessary to do the following steps:
+    		
+To generate shares is necessary to do the following steps:
+		
 		1. We have to initialize the applet. In this case, the applet identifier is 3132333433123450.
+		
 		2. We have to initialize the ElGamal . In this case, we generate the following values:
 			- p: the APDU used to generate p is: CLA=90, INS=01, P1-P2=00, Lc=20 and data=p. 
 			- q: the APDU used to generate q is: CLA=90, INS=11, P1-P2=00, Lc=20 and data=q. 
