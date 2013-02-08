@@ -128,11 +128,11 @@ Once the applet has been installed in each SC, our application, following the pr
 		4. ElGamal encryption result is recovered sending the APDU: CLA=90, INS=0D, P1-P2=00.
 
 
-### Homomorphic Decryption or tally (as least t SC must participate in this process)
-		Once elections have been concluded, a set of at least t members of the electoral board is necessary to meet for successfully decrypting votes.
+### Homomorphic Decryption or tally (as least t-SC must participate in this process)
+		Once elections have been concluded, a set of at least t-members of the electoral board is necessary to meet for successfully decrypting votes.
 		At this point, votes have been aggregated yet thank to the use of a homomorphic properties of ElGamal.
 		
-		-Using the lagrange coefficients, the evaluations values, and the aggregated votes computed before in the client side, each of t SCs compute securely and internally its partials Y1:
+		-Using the lagrange coefficients, the evaluations values, and the aggregated votes computed before in the client side, each of t-SCs compute securely and internally its partials Y1:
 			Step 1 from shares generation process are repeated here.
 			2. Lagrange coefficient sending: CLA=90, INS=13, P1= card identifier, P2=00, Lc=20 and data=Lagrange coefficient.
 			3. Data to decrypt sending: CLA=90, INS=1D, P1-P2=00, Lc=20 and data=Y2+Y1.
