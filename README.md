@@ -105,7 +105,7 @@ Once the applet has been installed in each SC, our application, following the pr
 			- Public key storing: CLA=90, INS=15, P1-P2=00, Lc=20 and data=public key.
 			- Evaluation values generation: CLA=80, INS=07, P1-P2=00.
 
-		5. Once the receiver SC has stored their own share and share commitment, it must verify the correctness generation made by generator SC.
+		5. Once the receiver SC has stored its own share and share commitment, it must verify the correctness generation made by generator SC.
 			- Share verification: CLA=80, INS=A0, P1-P2=00.
 			- Share commitment verification: CLA=80, INS=B0, P1-P2=00.
 
@@ -115,29 +115,29 @@ Once the applet has been installed in each SC, our application, following the pr
 
 ### Verification (any SC with stored share and share commitment can perform this step)
 
-		Step 1 from shares generation process are repeated here.
-		2. Once the receiver SC has stored their own share and share commitment, it must verify the correctness generation made by generator SC.
+		Step 1 from shares generation process is repeated here.
+		2. Once the receiver SC has stored its own share and share commitment, it must verify the correctness generation made by generator SC.
 			- Share verification: CLA=80, INS=A0, P1-P2=00.
 			- Share commitment verification: CLA=80, INS=B0, P1-P2=00.
 
 ### Encryption (any SC can perform this step)
 
 		Steps 1 and 2 (if they are not performed before) from shares generation process are repeated here.
-		3. The data to encrypt is sent to SC and it is encrypted with APDU: CLA=90, INS=0C, P1-P2=00, Lc=20, Data=message to encrypt.
+		3. The data to encrypt are sent to SC and they are encrypted with APDU: CLA=90, INS=0C, P1-P2=00, Lc=20, Data=message to encrypt.
 		4. ElGamal encryption result is recovered by sending the APDU: CLA=90, INS=0D, P1-P2=00.
 
 
 ### Homomorphic Decryption or tally (as least t-SC must participate in this process)
 		Once elections have been concluded, a set of at least t-members of the electoral board is necessary to meet successfully decrypting votes.
-		At this point, votes have been aggregated yet thanks to the use of a homomorphic properties of ElGamal.
+		At this point, votes have been aggregated thanks to the use of a homomorphic properties of ElGamal.
 		
-		-By using the lagrange coefficients, the evaluations values, and the aggregated votes computed before in the client side, each of t-SCs compute securely and internally its partials Y1:
+		- By using the lagrange coefficients, the evaluations values and the aggregated votes computed before in the client side, each of t-SCs compute securely and internally its partials Y1:
 			Step 1 from shares generation process is repeated here.
 			2. Lagrange coefficient sending: CLA=90, INS=13, P1= card identifier, P2=00, Lc=20 and data=Lagrange coefficient.
 			3. Data to decrypt sending: CLA=90, INS=1D, P1-P2=00, Lc=20 and data=Y2+Y1.
 			4. Partial decryption: CLA=80, INS=0F , P1-P2=00.
 		
-		Once all partial decryptions have been recovered, in the client side the final decryption is computed by following the steps described in the paper.
+		Once all partial decryptions have been recovered, the final decryption is computed in the client side by following the steps described in the paper.
 		
 		
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/tally.png">
@@ -153,7 +153,7 @@ This software is released under BSD 3-clause license, which is contained in the 
 
 ##Future Work
 
-As future work, we are working on a non-trusted third party (Non-TTP)
+As future work concerns, we are working on a non-trusted third party (Non-TTP)
 solution with a distributed generation of the shares. In addition, we would like
 to improve the efficiency, time and storage of the protocol in smartcards (i.e.,
 using ElGamal on elliptic curves).
