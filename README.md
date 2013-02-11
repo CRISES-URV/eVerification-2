@@ -19,8 +19,8 @@ You can find more information about the eVerification2 project in http://crises-
 As a result of this research project, CRISES group has studied the feasibility of developing ElGamal 
 cryptosystem and Shamir’s secret sharing scheme into JavaCards, whose API gives no support for it.
 
-In particular, the contributions of our work have been the design and development for JavaCards of
-the following building blocks: (i) ElGamal cryptosystem to generate the ElGamal key pair, (ii) Shamir’s 
+In particular, the contributions of our work have been the design and development of
+the following building blocks for JavaCards: (i) ElGamal cryptosystem to generate the ElGamal key pair, (ii) Shamir’s 
 secret sharing scheme to divide the private key in a set of shares, (iii) secure communication channels 
 for the distribution of the shares, and (iv) a decryption function without reconstructing the private key. 
 This solution can be useful for a typical e-voting system, speciﬁcally in the voting scheme presented by 
