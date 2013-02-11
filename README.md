@@ -143,12 +143,12 @@ Once the applet has been installed in each SC, our application, following the pr
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/tally.png">
 
 
-You can find more information about the implementation in the section Development Details of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>
+You can find more information about the implementation in the Development Details section of the <a href="https://raw.github.com/CRISES-URV/eVerification-2/master/extendedpaper.pdf">extendedpaper.pdf</a>
 
 
 ##License
 
-This software is released under BSD 3-clause license which is contained in the file <a href="https://github.com/CRISES-URV/eVerification-2/blob/master/LICENSE">LICENSE</a>.
+This software is released under BSD 3-clause license, which is contained in the file <a href="https://github.com/CRISES-URV/eVerification-2/blob/master/LICENSE">LICENSE</a>.
 
 
 ##Future Work
