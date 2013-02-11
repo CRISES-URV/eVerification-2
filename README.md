@@ -34,9 +34,9 @@ description of an execution example.
 
 ##Software
 
-This library implements the protocol described in the paper mentioned above and it is prepared to execute a 
+This library implements the protocol described in the paper mentioned above and it is prepared to easily execute a 
 configurable example with a maximum number of shares (n=5) and a threshold from 2 to the maximum of shares (n).
-easily execute the following functions implemented in the library:
+To execute the following functions implemented in the library:
 - <b>Generate </b> a set of shares from a SmartCard(SC) according to user configuration (number of shares, threshold and key size).
 - <b>Distribute </b> the generated shares, public key, and other public parameters from that SC to the rest of SCs.
 - <b>Verify </b> the received share from each SC. 
