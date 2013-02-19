@@ -123,7 +123,8 @@ Once the applet has been installed in each SC, our application, following the pr
 ### Encryption (any SC can perform this step)
 
 		Steps 1 and 2 (if they are not performed before) from shares generation process are repeated here.
-		3. The data to encrypt are sent to SC and they are encrypted with APDU: CLA=90, INS=0C, P1-P2=00, Lc=20, Data=message to encrypt.
+		3. The data to encrypt are sent to SC and they are encrypted with APDU: CLA=90, INS=0C, P1-P2=00, Lc=20, 
+		   Data=message to encrypt.
 		4. ElGamal encryption result is recovered by sending the APDU: CLA=90, INS=0D, P1-P2=00.
 
 
