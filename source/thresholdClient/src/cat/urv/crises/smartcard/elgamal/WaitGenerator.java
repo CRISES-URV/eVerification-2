@@ -236,16 +236,16 @@ public class WaitGenerator extends JFrame implements PropertyChangeListener{
             taskOutput.append("\n\n___________________________\n\n    Time of generation: "+temps[0]+"\n__________________________\n");
             seguent.setVisible(true);
             seguent.addActionListener(new ActionListener(){
-				@Override
-				public void actionPerformed(ActionEvent arg0) {
-					try {
-						WaitGenerator.this.setVisible(false);
-						frame.dispose();
-						new WaitDistribution(cc, ini, fi);						
-					} catch (CardException e) {
-						System.out.println(e);
-					}
-				}
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			try {
+				WaitGenerator.this.setVisible(false);
+				frame.dispose();
+				new WaitDistribution(cc, ini, fi);						
+			} catch (CardException e) {
+				System.out.println(e);
+			}
+		}
             });       
         }
     }
