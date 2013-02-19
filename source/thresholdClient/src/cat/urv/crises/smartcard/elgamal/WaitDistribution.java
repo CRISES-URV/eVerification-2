@@ -45,8 +45,8 @@ package cat.urv.crises.smartcard.elgamal;
  * Ministry of Industry, Commerce and Tourism (through the development program AVANZA 
  * I+D). We would like to thank Scytl for their support and to the Ministery for the 
  * needed founding required to carry it out.
- * The Beta version of this code has been implemented by Jordi Castellà, Vicenç Creus, 
- * Roger Jardí and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
+ * The Beta version of this code has been implemented by Jordi Castellï¿½, Vicenï¿½ Creus, 
+ * Roger Jardï¿½ and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
  * 
  */
 import java.awt.BorderLayout;
@@ -72,130 +72,89 @@ import javax.swing.JButton;
 /**
  * Frame to the part of distribution
  * 
- * @author Roger Jardí Cedó {@link roger.jardi@urv.cat} & Vicenç Creus Garcia {@link vicens.creus@urv.cat}
+ * @author Roger Jardï¿½ Cedï¿½ {@link roger.jardi@urv.cat} & Vicenï¿½ Creus Garcia {@link vicens.creus@urv.cat}
  */
 public class WaitDistribution extends JFrame implements PropertyChangeListener{
 	private static final long serialVersionUID = 1L;
 	private Task task;
-    private JTextArea taskOutput;
-    private JProgressBar progressBar;
-    private static CardClient cc;
-    private static double  scpercent;
-    private static SimpleDateFormat sdf;
-    private static String data, datatotal;
-    private double incpercent;
-    private String message;
-    //private String message2;
-    private int numCard = -1;
-    private JButton seguent;
-    private String[] temps = new String[3];
-    private JFrame frame;
-    private JPanel panel_1;
-    private long inici, figen;
-	/**
-	 * Launch the application.
-	 * @throws CardException 
-	 */
-	/*public static void main(String[] args) { 
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					WaitWindow frame = new WaitWindow();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}*/
-    /**
-     * Falta agafar els numshares autentics de cc.getNumShares()
-     * @throws CardException
-     */
-    
-    /*public static void main(String[] args) {
-        //Schedule a job for the event-dispatching thread:
-        //creating and showing this application's GUI.
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                try { 
-					createAndShowGUI();
-					//sdf = ini_generator();
-				} catch (CardException e) {
-					e.printStackTrace();
-				}
-            }
-        });
-    }*/
-
+	private JTextArea taskOutput;
+	private JProgressBar progressBar;
+	private static CardClient cc;
+	private static double  scpercent;
+	private static SimpleDateFormat sdf;
+	private static String data, datatotal;
+	private double incpercent;
+	private String message;
+	private int numCard = -1;
+	private JButton seguent;
+	private String[] temps = new String[3];
+	private JFrame frame;
+	private JPanel panel_1;
+	private long inici, figen;
 	/**
 	 * Create the frame.
 	 * @throws CardException 
 	 */
 	public WaitDistribution(CardClient ccj, long inici, long fi) throws CardException {
-	    //Create the demo's UI
 		cc=ccj;
 		this.inici=inici;
 		figen = fi;
 		sdf  = new SimpleDateFormat("mm:ss.SSS");
-        progressBar = new JProgressBar(0, 100);
-        progressBar.setBorder(new EmptyBorder(0, 0, 10, 0));
-        progressBar.setValue(0);
-        progressBar.setStringPainted(true);
-
-        taskOutput = new JTextArea(20, 20);
-        taskOutput.setMargin(new Insets(5,5,5,5));
-        taskOutput.setEditable(false);
-        
-        JPanel panel = new JPanel(new BorderLayout());
-        panel.setBorder(new EmptyBorder(5, 10, 0, 10));
-        panel.add(progressBar, BorderLayout.NORTH);
-        panel.add(new JScrollPane(taskOutput), BorderLayout.CENTER);
-                
-        frame = new JFrame();
-        frame.getContentPane().add(panel, BorderLayout.PAGE_START);
-        
-        
-        
-        ImageIcon arrow = new ImageIcon("images/arrow.png");
-        
-        panel_1 = new JPanel();
-        panel_1.setBorder(new EmptyBorder(0, 0, 0, 4));
-        frame.getContentPane().add(panel_1, BorderLayout.EAST);
-        
-        seguent = new JButton("Next");
-        panel_1.add(seguent);
-        seguent.setMinimumSize(new Dimension(44, 23));
-        seguent.setMaximumSize(new Dimension(46, 23));
-        seguent.setVisible(false);
-        seguent.setIcon(arrow);
-        seguent.setSize(15, 10);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        frame.setTitle("Distribution: ("+cc.getTHRESHOLD()+","+cc.getNumShares()+") - ElGamal Threshold Scheme ["+cc.getPbitLength()+" bits]");
-       
-        //Display the window.
-        frame.setSize(540,450);
-        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
-        Dimension ventana = frame.getSize();
-        frame.setLocation((pantalla.width - ventana.width) / 2,(pantalla.height - ventana.height) / 2);
-        frame.setVisible(true);
-        
-        frame.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-	    task = new Task();
-	    task.addPropertyChangeListener(this);
-	    task.execute();
-	}
+	        progressBar = new JProgressBar(0, 100);
+	        progressBar.setBorder(new EmptyBorder(0, 0, 10, 0));
+	        progressBar.setValue(0);
+	        progressBar.setStringPainted(true);
 	
-	 public void propertyChange(PropertyChangeEvent evt) {
+	        taskOutput = new JTextArea(20, 20);
+	        taskOutput.setMargin(new Insets(5,5,5,5));
+	        taskOutput.setEditable(false);
+	        
+	        JPanel panel = new JPanel(new BorderLayout());
+	        panel.setBorder(new EmptyBorder(5, 10, 0, 10));
+	        panel.add(progressBar, BorderLayout.NORTH);
+	        panel.add(new JScrollPane(taskOutput), BorderLayout.CENTER);
+	                
+	        frame = new JFrame();
+	        frame.getContentPane().add(panel, BorderLayout.PAGE_START);
+		
+	        ImageIcon arrow = new ImageIcon("images/arrow.png");
+	        
+	        panel_1 = new JPanel();
+	        panel_1.setBorder(new EmptyBorder(0, 0, 0, 4));
+	        frame.getContentPane().add(panel_1, BorderLayout.EAST);
+	        
+	        seguent = new JButton("Next");
+	        panel_1.add(seguent);
+	        seguent.setMinimumSize(new Dimension(44, 23));
+	        seguent.setMaximumSize(new Dimension(46, 23));
+	        seguent.setVisible(false);
+	        seguent.setIcon(arrow);
+	        seguent.setSize(15, 10);
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        
+	        frame.setTitle("Distribution: ("+cc.getTHRESHOLD()+","+cc.getNumShares()+") - ElGamal Threshold Scheme ["+cc.getPbitLength()+" bits]");
+	       
+	        //Display the window.
+	        frame.setSize(540,450);
+	        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+	        Dimension ventana = frame.getSize();
+	        frame.setLocation((pantalla.width - ventana.width) / 2,(pantalla.height - ventana.height) / 2);
+	        frame.setVisible(true);
+	        
+	        frame.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+		    task = new Task();
+		    task.addPropertyChangeListener(this);
+		    task.execute();
+		}
+		
+		 public void propertyChange(PropertyChangeEvent evt) {
         if ("progress" == evt.getPropertyName()) {
             int progress = (Integer) evt.getNewValue();
-            //inicialitza el generador
+            //initialize the generator SC
             if(progress==1){
             	taskOutput.append("DISTRIBUTION OF SHARES\n");
             	taskOutput.append("-------------------------------------------------\n\n");
             }else if(progress == 100){
-            	//System.out.println("hola2");
             	progressBar.setValue(progress);
             	if(cc.getResponsesw()[0].equals("9000")){
             		taskOutput.append("\t\tOK  "+message);
@@ -215,10 +174,8 @@ public class WaitDistribution extends JFrame implements PropertyChangeListener{
             		numCard = Integer.parseInt(cc.getResponsesw()[1]);
             	}
             	if(cc.getResponsesw()[0].equals("9000")){
-            		//taskOutput.append("\t\t\tOK\n ");
             		taskOutput.append("\t\tOK  "+this.message);
             	}else{
-            		//taskOutput.append(String.format("Completat %d%%.\n", task.getProgress()));
             		taskOutput.append("\t\tError: "+cc.getResponsesw()[0]+"        "+this.message);
             	}
             	
@@ -238,17 +195,16 @@ public class WaitDistribution extends JFrame implements PropertyChangeListener{
          */
         @Override
         public Void doInBackground() {
-        	long fi = System.currentTimeMillis();
-            scpercent = 100/(WaitDistribution.cc.getNumShares()-1);
-            System.out.println("SCPERCENMT:"+scpercent+", INCPERCENT: "+incpercent);
-            double sumpercent = 0.0;
-            //Initialize progress property.
-            setProgress(0);
-
-			
-     		incpercent = scpercent/5; //because there are 4 operations per SC
-     		setProgress(1);
-     		try {
+	        long fi = System.currentTimeMillis();
+	        scpercent = 100/(WaitDistribution.cc.getNumShares()-1);
+	        double sumpercent = 0.0;
+	        //Initialize progress property.
+	        setProgress(0);
+	
+				
+	     	incpercent = scpercent/5; //because there are 4 operations per SC
+	     	setProgress(1);
+	     	try {
 	    		for (int i=1; i<cc.getNumShares(); i++){
 	    			sumpercent = scpercent*(i-1);
 	    			long ini =System.currentTimeMillis();
@@ -286,19 +242,18 @@ public class WaitDistribution extends JFrame implements PropertyChangeListener{
 	    			}
 	    			cc.cardDisconnection(i);
 	    		}
-	    		
-	    		cc.cardDisconnection(0);
-	    		long ini2 = System.currentTimeMillis();
-	    		data = sdf.format(ini2-fi);
-	    		//datatotal = sdf.format(ini2-inici);
-	    		datatotal  = sdf.format((figen-inici)+(ini2-fi));
+    		
+    			cc.cardDisconnection(0);
+    			long ini2 = System.currentTimeMillis();
+    			data = sdf.format(ini2-fi);
+    			datatotal  = sdf.format((figen-inici)+(ini2-fi));
     			setProgress(100);
-	    		
+    		
      		} catch (CardException e) {
     			System.out.println(e);
     		}
-            return null;
-        }
+    		return null;
+      	}
 
         /*
          * Executed in event dispatching thread
@@ -307,23 +262,20 @@ public class WaitDistribution extends JFrame implements PropertyChangeListener{
         public void done() {
             Toolkit.getDefaultToolkit().beep();
             frame.setCursor(null); //turn off the wait cursor
-            //taskOutput.append("Fi!\n");
-            
             taskOutput.append("\n\n___________________________\n\n    Time of distribution: "+temps[1]+"\n    Total time: "+datatotal+"\n__________________________\n");
             
             seguent.setVisible(true);
             seguent.addActionListener(new ActionListener(){
-				@Override
-				public void actionPerformed(ActionEvent arg0) {
-					try {
-						WaitDistribution.this.setVisible(false);
-						frame.dispose();
-						new Principal(cc);
-						//new UseCases(cc);
-					} catch (CardException e) {
-						System.out.println(e);
-					}
-				}
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			try {
+				WaitDistribution.this.setVisible(false);
+				frame.dispose();
+				new Principal(cc);
+			} catch (CardException e) {
+				System.out.println(e);
+			}
+		}
             	
             });
             
