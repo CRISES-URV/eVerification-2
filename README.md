@@ -128,16 +128,20 @@ Once the applet has been installed in each SC, our application, following the pr
 
 
 ### Homomorphic Decryption or tally (as least t-SC must participate in this process)
-		Once elections have been concluded, a set of at least t-members of the electoral board is necessary to decrypt votes successfully.
+		Once elections have been concluded, a set of at least t-members of the electoral board is necessary to decrypt
+		votes successfully.
 		At this point, votes have been aggregated thanks to the use of a homomorphic properties of ElGamal.
 		
-		- By using the lagrange coefficients, the evaluations values and the aggregated votes computed before in the client side, each of t-SCs compute securely and internally its partials Y1:
+		- By using the lagrange coefficients, the evaluations values and the aggregated votes computed before in the 
+		  client side, each of t-SCs compute securely and internally its partials Y1:
 			Step 1 from shares generation process is repeated here.
-			2. Lagrange coefficient sending: CLA=90, INS=13, P1= card identifier, P2=00, Lc=20 and data=Lagrange coefficient.
+			2. Lagrange coefficient sending: CLA=90, INS=13, P1= card identifier, P2=00, Lc=20 and data=Lagrange 
+			   coefficient.
 			3. Data to decrypt sending: CLA=90, INS=1D, P1-P2=00, Lc=20 and data=Y2+Y1.
 			4. Partial decryption: CLA=80, INS=0F , P1-P2=00.
 		
-		Once all partial decryptions have been recovered, the final decryption is computed in the client side by following the steps described in the paper.
+		Once all partial decryptions have been recovered, the final decryption is computed in the client side by 
+		following the steps described in the paper.
 		
 		
 <img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/tally.png">
