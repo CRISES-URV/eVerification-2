@@ -241,8 +241,7 @@ public class WaitGenerator extends JFrame implements PropertyChangeListener{
 					try {
 						WaitGenerator.this.setVisible(false);
 						frame.dispose();
-						new WaitDistribution(cc, ini, fi);
-						//new UseCases(cc);
+						new WaitDistribution(cc, ini, fi);						
 					} catch (CardException e) {
 						System.out.println(e);
 					}
