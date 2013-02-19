@@ -45,8 +45,8 @@ package cat.urv.crises.smartcard.elgamal;
  * Ministry of Industry, Commerce and Tourism (through the development program AVANZA 
  * I+D). We would like to thank Scytl for their support and to the Ministery for the 
  * needed founding required to carry it out.
- * The Beta version of this code has been implemented by Jordi Castellà, Vicenç Creus, 
- * Roger Jardí and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
+ * The Beta version of this code has been implemented by Jordi Castellï¿½, Vicenï¿½ Creus, 
+ * Roger Jardï¿½ and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
  * 
  */
 import java.util.ArrayList;
@@ -67,7 +67,7 @@ import javax.smartcardio.TerminalFactory;
 /**
  * Operations implemented in the SC
  * 
- * @author Roger Jardí Cedó {@link roger.jardi@urv.cat} & Vicenç Creus Garcia {@link vicens.creus@urv.cat}
+ * @author Roger Jardï¿½ Cedï¿½ {@link roger.jardi@urv.cat} & Vicenï¿½ Creus Garcia {@link vicens.creus@urv.cat}
  * 
  */
 
@@ -458,7 +458,7 @@ public class CardClient {
 	/**
 	 * Inicialization of ElGamal, send p,g,q. Futhermore if that SC is generator send the pk and sk.
 	 * @param is_generator
-	 * @param id_card
+	 * @param id_card card identifier
 	 * @throws CardException
 	 */
 	protected void elGamalInitialization(boolean is_generator, int id_card) throws CardException {
@@ -483,7 +483,7 @@ public class CardClient {
 
 	/**
 	 * Threshold generation for the SC with id_card
-	 * @param id_card
+	 * @param id_card card identifier
 	 * @throws CardException
 	 */
 	protected void thresholdSchemeGeneration(int id_card) throws CardException {
@@ -513,7 +513,11 @@ public class CardClient {
 		System.out.println("*****************************************");
 		
 	}
-	
+	/**
+	 * The generator SC send the corresponding information to the receiver SC.
+	 * @param id_receiver_card receiver smart card identifier
+	 * @param id_generator_card generator smart card identifier
+	 */	
 	protected void thresholdParticularParametersBroaCasting(int id_generator_card, int id_receiver_card) throws CardException {
 		
 		System.out.println("*** THRESHOLD PARTICULAR PARAMETERS BROADCASTING *** FROM CARD =" + id_generator_card + " TO CARD ="+id_receiver_card);
@@ -522,6 +526,10 @@ public class CardClient {
 		System.out.println("*****************************************");
 		
 	}
+	/**
+	 * Sending information of the SC identified by id_card parameter
+	 * @param id_card card identifier
+	 */
 	protected void thresholdParametersReceiving(int id_card) throws CardException {
 		
 		System.out.println("*** THRESHOLD PARAMETERS RECEIVING ***");			
@@ -613,7 +621,7 @@ public class CardClient {
 		return ret;				
 	}
 	/**
-	 * 
+	 * Process of tally 
 	 * @param id_card
 	 * @return Result of the tally
 	 * @throws CardException
@@ -661,7 +669,7 @@ public class CardClient {
 		
 	}
 	/**
-	 * Generation of the evaluation values
+	 * Generating the evaluation values
 	 */
 	private void generateEvaluationValues() {
 		System.out.println("** generating evaluation values**");
@@ -733,7 +741,7 @@ public class CardClient {
 		}
 	}
 	/**
-	 * 
+	 * Used to send the information to a SC. In this case the APDU is fractioned in the following parameters.
 	 * @param INS The instruction
 	 * @param P1 The parameter 1
 	 * @param P2 The parameter 2
@@ -795,7 +803,7 @@ public class CardClient {
 		send(subdata, text, id_card);
 	}
 	/**
-	 * 
+	 * Used to send the information to a SC. In this case the APDU is fractioned in the following parameters.
 	 * @param apdu The apdu in a only block 
 	 * @param text The text
 	 * @param id_card The identifier of the SC
@@ -893,38 +901,22 @@ public class CardClient {
 	public String byteArrayTohexString(byte[] bytes){
 		
 		int cBytes = bytes.length;
-        int iByte = 0;
-        String ret = "";
-        for (;;) {
-            for (int i = 0; i < 8; i++) {
-                String hex = Integer.toHexString(bytes[iByte++] & 0xff);
-                if (hex.length() == 1) {
-                    hex = "0" + hex;
-                }
-                ret = ret+hex;
-                if (iByte >= cBytes) {
-                	while (ret.startsWith("0")){ //in order to remove left side zeros
-                		ret = ret.substring(1);
-                	}
-                    return ret;
-                }
-            }
-            
-        }
-        
-	}
-	
-	public static void main(String[] args){
-		try {
-			int[] n= new int[5];
-			n[0]=1;
-			n[1]=3;
-			n[2]=4;
-			new CardClient(5,3,(short)1024,n);
-		} catch (CardException e) {
-			System.out.println(e);
-		}
-	}
-	
-	
+        	int iByte = 0;
+        	String ret = "";
+        	for (;;) {
+            		for (int i = 0; i < 8; i++) {
+                		String hex = Integer.toHexString(bytes[iByte++] & 0xff);
+                		if (hex.length() == 1) {
+                    		hex = "0" + hex;
+                		}
+                		ret = ret+hex;
+                		if (iByte >= cBytes) {
+                			while (ret.startsWith("0")){ //in order to remove left side zeros
+                				ret = ret.substring(1);
+                			}
+                    			return ret;
+                		}
+            		}
+        	}
+	}	
 }
