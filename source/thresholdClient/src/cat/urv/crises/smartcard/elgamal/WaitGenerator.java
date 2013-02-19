@@ -45,8 +45,8 @@ package cat.urv.crises.smartcard.elgamal;
  * Ministry of Industry, Commerce and Tourism (through the development program AVANZA 
  * I+D). We would like to thank Scytl for their support and to the Ministery for the 
  * needed founding required to carry it out.
- * The Beta version of this code has been implemented by Jordi Castellà, Vicenç Creus, 
- * Roger Jardí and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
+ * The Beta version of this code has been implemented by Jordi Castellï¿½, Vicenï¿½ Creus, 
+ * Roger Jardï¿½ and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
  * 
  */
 import java.awt.BorderLayout;
@@ -72,24 +72,23 @@ import javax.swing.JButton;
 /**
  * Frame to the part of generation
  *
- * @author Roger Jardí Cedó {@link roger.jardi@urv.cat} & Vicenç Creus Garcia {@link vicens.creus@urv.cat}
+ * @author Roger Jardï¿½ Cedï¿½ {@link roger.jardi@urv.cat} & Vicenï¿½ Creus Garcia {@link vicens.creus@urv.cat}
  */
 public class WaitGenerator extends JFrame implements PropertyChangeListener{
 	private static final long serialVersionUID = 1L;
 	private Task task;
-    private JTextArea taskOutput;
-    private JProgressBar progressBar;
-    private static CardClient cc;
-    //private static double  scpercent;
-    private static SimpleDateFormat sdf;
-    private static String data;
-    private double incpercent;
-    private String message;
-    private JButton seguent;
-    private String[] temps = new String[3];
-    private JFrame frame;
-    private long ini, fi;
-    private JPanel panel_1;
+	private JTextArea taskOutput;
+	private JProgressBar progressBar;
+	private static CardClient cc;
+	private static SimpleDateFormat sdf;
+	private static String data;
+	private double incpercent;
+	private String message;
+	private JButton seguent;
+	private String[] temps = new String[3];
+	private JFrame frame;
+	private long ini, fi;
+	private JPanel panel_1;
 	/**
 	 * Create the frame.
 	 * @throws CardException 
@@ -98,82 +97,77 @@ public class WaitGenerator extends JFrame implements PropertyChangeListener{
 	    //Create the demo's UI
 		cc=ccj;
 		sdf  = new SimpleDateFormat("mm:ss.SSS");
-        progressBar = new JProgressBar(0, 100);
-        progressBar.setBorder(new EmptyBorder(0, 0, 10, 0));
-        progressBar.setValue(0);
-        progressBar.setStringPainted(true);
-
-        taskOutput = new JTextArea(20, 20);
-        taskOutput.setMargin(new Insets(5,5,5,5));
-        taskOutput.setEditable(false);
-        
-        JPanel panel = new JPanel(new BorderLayout());
-        panel.setBorder(new EmptyBorder(5, 10, 0, 10));
-        panel.add(progressBar, BorderLayout.NORTH);
-        panel.add(new JScrollPane(taskOutput), BorderLayout.CENTER);
-                
-        frame = new JFrame();
-        frame.getContentPane().add(panel, BorderLayout.PAGE_START);
-        ImageIcon arrow = new ImageIcon("images/arrow.png");
-        
-        panel_1 = new JPanel();
-        panel_1.setBorder(new EmptyBorder(0, 0, 0, 4));
-        frame.getContentPane().add(panel_1, BorderLayout.EAST);
-        
-        seguent = new JButton("Distribution");
-        panel_1.add(seguent);
-        seguent.setMinimumSize(new Dimension(44, 23));
-        seguent.setMaximumSize(new Dimension(46, 23));
-        seguent.setVisible(false);
-        seguent.setIcon(arrow);
-        seguent.setSize(15, 10);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        frame.setTitle("Generation: ("+cc.getTHRESHOLD()+","+cc.getNumShares()+") - ElGamal Threshold Scheme ["+cc.getPbitLength()+" bits]");
-        //Display the window.
-        frame.setSize(540,450);
-        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
-        Dimension ventana = frame.getSize();
-        frame.setLocation((pantalla.width - ventana.width) / 2,(pantalla.height - ventana.height) / 2);
-        frame.setVisible(true);
-        
-        frame.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-	    task = new Task();
-	    task.addPropertyChangeListener(this);
-	    task.execute();
+	        progressBar = new JProgressBar(0, 100);
+	        progressBar.setBorder(new EmptyBorder(0, 0, 10, 0));
+	        progressBar.setValue(0);
+	        progressBar.setStringPainted(true);
+	
+	        taskOutput = new JTextArea(20, 20);
+	        taskOutput.setMargin(new Insets(5,5,5,5));
+	        taskOutput.setEditable(false);
+	        
+	        JPanel panel = new JPanel(new BorderLayout());
+	        panel.setBorder(new EmptyBorder(5, 10, 0, 10));
+	        panel.add(progressBar, BorderLayout.NORTH);
+	        panel.add(new JScrollPane(taskOutput), BorderLayout.CENTER);
+	                
+	        frame = new JFrame();
+	        frame.getContentPane().add(panel, BorderLayout.PAGE_START);
+	        ImageIcon arrow = new ImageIcon("images/arrow.png");
+	        
+	        panel_1 = new JPanel();
+	        panel_1.setBorder(new EmptyBorder(0, 0, 0, 4));
+	        frame.getContentPane().add(panel_1, BorderLayout.EAST);
+	        
+	        seguent = new JButton("Distribution");
+	        panel_1.add(seguent);
+	        seguent.setMinimumSize(new Dimension(44, 23));
+	        seguent.setMaximumSize(new Dimension(46, 23));
+	        seguent.setVisible(false);
+	        seguent.setIcon(arrow);
+	        seguent.setSize(15, 10);
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        
+	        frame.setTitle("Generation: ("+cc.getTHRESHOLD()+","+cc.getNumShares()+") - ElGamal Threshold Scheme ["+cc.getPbitLength()+" bits]");
+	        //Display the window.
+	        frame.setSize(540,450);
+	        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+	        Dimension ventana = frame.getSize();
+	        frame.setLocation((pantalla.width - ventana.width) / 2,(pantalla.height - ventana.height) / 2);
+	        frame.setVisible(true);
+	        
+	        frame.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+		task = new Task();
+		task.addPropertyChangeListener(this);
+		task.execute();
 	}
 	
-	 public void propertyChange(PropertyChangeEvent evt) {
-        if ("progress" == evt.getPropertyName()) {
-            int progress = (Integer) evt.getNewValue();
-            //inicialitza el generador
-            if(progress==1){
-            	setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-            	taskOutput.append("INICIALIZATION OF THE GENERATOR\n");
-            	taskOutput.append("------------------------------------------------\n\n");
-            	taskOutput.append("   Smart Card 0, generator\n");
-            	taskOutput.append("        1. Inicializating the applet...                ");
-            	//this.numCard=0;
-            	progressBar.setValue(1);
-            }else if(progress == 100){
-            	//System.out.println("hola2");
-            	progressBar.setValue(progress);
-            	if(cc.getResponsesw()[0].equals("9000")){
-            		//taskOutput.append("\t\tOK\n");
-            		taskOutput.append("\t\tOK  "+this.message);
+	public void propertyChange(PropertyChangeEvent evt) {
+		if ("progress" == evt.getPropertyName()) {
+			int progress = (Integer) evt.getNewValue();
+			//initialize the generator SC
+			if(progress==1){
+			setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+			taskOutput.append("INICIALIZATION OF THE GENERATOR\n");
+			taskOutput.append("------------------------------------------------\n\n");
+			taskOutput.append("   Smart Card 0, generator\n");
+			taskOutput.append("        1. Inicializating the applet...                ");
+			progressBar.setValue(1);
+            	}else if(progress == 100){
+            		progressBar.setValue(progress);
+            		if(cc.getResponsesw()[0].equals("9000")){
+            			taskOutput.append("\t\tOK  "+this.message);
+            		}else{
+            			taskOutput.append("\t\tError: "+cc.getResponsesw()[0]);
+            		}
+            		temps[0]=data;
             	}else{
-            		taskOutput.append("\t\tError: "+cc.getResponsesw()[0]);
-            	}
-            	//taskOutput.append("       \n\nTemps de distribucio: "+data+"\n");
-            	temps[0]=data;
-            	//temps[2]=datatotal;
-            }else{
-            	progressBar.setValue(progress);
-            	if(cc.getResponsesw()[0].equals("9000")){
-            		taskOutput.append("\t\tOK  "+this.message);
-            	}else{
-            		taskOutput.append("\t\tError: "+cc.getResponsesw()[0]+"\n        "+this.message);
-            	}	
+            		progressBar.setValue(progress);
+            		if(cc.getResponsesw()[0].equals("9000")){
+	            		taskOutput.append("\t\tOK  "+this.message);
+        	    	}else{
+            			taskOutput.append("\t\tError: "+cc.getResponsesw()[0]+"\n        "+this.message);
+            		}	
             }
         }
     }
@@ -194,7 +188,7 @@ public class WaitGenerator extends JFrame implements PropertyChangeListener{
             ini = System.currentTimeMillis();
    
     		try {
-    			//******cc.ini_generator();******
+    			//******Generator SC******
     			setProgress(1);
     			long ini =System.currentTimeMillis();
     			cc.cardConnection(0, cc.getCards()[0]);
