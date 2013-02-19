@@ -45,8 +45,8 @@ package cat.urv.crises.smartcard.elgamal;
  * Ministry of Industry, Commerce and Tourism (through the development program AVANZA 
  * I+D). We would like to thank Scytl for their support and to the Ministery for the 
  * needed founding required to carry it out.
- * The Beta version of this code has been implemented by Jordi Castellà, Vicenç Creus, 
- * Roger Jardí and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
+ * The Beta version of this code has been implemented by Jordi Castellï¿½, Vicenï¿½ Creus, 
+ * Roger Jardï¿½ and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
  * 
  */
 import java.awt.BorderLayout;
@@ -87,7 +87,7 @@ import javax.swing.SpinnerNumberModel;
 /**
  * Interface of use cases implemented in the SC
  * 
- * @author Roger Jardí Cedó {@link roger.jardi@urv.cat} & Vicenç Creus Garcia {@link vicens.creus@urv.cat}
+ * @author Roger Jardï¿½ Cedï¿½ {@link roger.jardi@urv.cat} & Vicenï¿½ Creus Garcia {@link vicens.creus@urv.cat}
  */
 public class Principal extends JFrame implements PropertyChangeListener{
 	private static final long serialVersionUID = 1L;
@@ -111,20 +111,20 @@ public class Principal extends JFrame implements PropertyChangeListener{
 	private String message="";
 	private int nn;
 	private int ids;
-    private JTextArea taskOutput;
-    private String missatgeteclat;
-    private JTextField jtxt;
-    private static SimpleDateFormat sdf;
-    private JSpinner spP1;
-    private JSpinner spP2;
-    private JSpinner spP3;
-    private JPanel pnl_simulate;
-    private JButton btnXifra; 
-    private JButton btntally;
-    private JButton genera, btnSimularVoting, btnRecompte ; 
-    private JPanel panel_2, panel ;
-    private JLabel mplir;
-    private ArrayList<Integer> primers; 
+        private JTextArea taskOutput;
+        private String missatgeteclat;
+	private JTextField jtxt;
+	private static SimpleDateFormat sdf;
+	private JSpinner spP1;
+	private JSpinner spP2;
+	private JSpinner spP3;
+	private JPanel pnl_simulate;
+	private JButton btnXifra; 
+	private JButton btntally;
+	private JButton genera, btnSimularVoting, btnRecompte ; 
+	private JPanel panel_2, panel ;
+	private JLabel mplir;
+	private ArrayList<Integer> primers; 
 
 
 	/**
@@ -141,68 +141,68 @@ public class Principal extends JFrame implements PropertyChangeListener{
 		sdf  = new SimpleDateFormat("mm:ss.SSS");
 		frame = new JFrame();
 		frame.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
-        frame.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        	frame.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
         
-        JPanel panel_4 = new JPanel();
-        frame.getContentPane().add(panel_4);
-        panel_4.setLayout(new BorderLayout(0, 0));
-        
-        JLabel lblEscullLesSmart = new JLabel("Choose the SC to use:                                                                                              ");
-        panel_4.add(lblEscullLesSmart, BorderLayout.NORTH);
-        contentPane = new JPanel();
-        contentPane.setBorder(new EmptyBorder(5, 5, 3, 5));
-        frame.getContentPane().add(contentPane);
-        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
-        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
-        
-        panel = new JPanel();
-        panel.setBorder(new EmptyBorder(20, 0, 0, 0));
-        panel.setLayout(new BorderLayout(0, 0));
-        
-        JPanel panel_1 = new JPanel();
-        panel.add(panel_1, BorderLayout.NORTH);
-        panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
-        
-        panel_2 = new JPanel();
-        panel_1.add(panel_2);
-        GridBagLayout gbl_panel_2 = new GridBagLayout();
-        gbl_panel_2.columnWidths = new int[]{60, 30, 276, 20};
-        gbl_panel_2.rowHeights = new int[]{23, 0};
-        gbl_panel_2.columnWeights = new double[]{1.0, 0.0, 0.0, 0.0};
-        gbl_panel_2.rowWeights = new double[]{0.0, Double.MIN_VALUE};
-        panel_2.setLayout(gbl_panel_2);
-        
-        JLabel txt = new JLabel("message: ");
-        GridBagConstraints gbc_txt = new GridBagConstraints();
-        gbc_txt.anchor = GridBagConstraints.WEST;
-        gbc_txt.insets = new Insets(0, 0, 0, 5);
-        gbc_txt.gridx = 0;
-        gbc_txt.gridy = 0;
-        panel_2.add(txt, gbc_txt);
-        jtxt = new JTextField();
-        GridBagConstraints gbc_jtxt = new GridBagConstraints();
-        gbc_jtxt.anchor = GridBagConstraints.WEST;
-        gbc_jtxt.insets = new Insets(0, 0, 0, 5);
-        gbc_jtxt.gridx = 2;
-        gbc_jtxt.gridy = 0;
-        panel_2.add(jtxt, gbc_jtxt);
-        jtxt.setColumns(42);
-        jtxt.setSize(20,20);
-        
-        JPanel pnl_sep = new JPanel();
-        frame.getContentPane().add(pnl_sep);
-        
-        JLabel lblNewLabel = new JLabel("_______________________________________________________________________________");
-        pnl_sep.add(lblNewLabel);
-        
-        JPanel panel_3 = new JPanel();
-        panel_3.setBorder(new EmptyBorder(2, 0, 0, 0));
-        panel_1.add(panel_3);
-        panel_3.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-        
-        genera = new JButton("Generate");
-        panel_3.add(genera);
-        genera.addActionListener(new ActionListener(){
+	        JPanel panel_4 = new JPanel();
+	        frame.getContentPane().add(panel_4);
+	        panel_4.setLayout(new BorderLayout(0, 0));
+	        
+	        JLabel lblEscullLesSmart = new JLabel("Choose the SC to use:                                                                                              ");
+	        panel_4.add(lblEscullLesSmart, BorderLayout.NORTH);
+	        contentPane = new JPanel();
+	        contentPane.setBorder(new EmptyBorder(5, 5, 3, 5));
+	        frame.getContentPane().add(contentPane);
+	        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
+	        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
+	        
+	        panel = new JPanel();
+	        panel.setBorder(new EmptyBorder(20, 0, 0, 0));
+	        panel.setLayout(new BorderLayout(0, 0));
+	        
+	        JPanel panel_1 = new JPanel();
+	        panel.add(panel_1, BorderLayout.NORTH);
+	        panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
+	        
+	        panel_2 = new JPanel();
+	        panel_1.add(panel_2);
+	        GridBagLayout gbl_panel_2 = new GridBagLayout();
+	        gbl_panel_2.columnWidths = new int[]{60, 30, 276, 20};
+	        gbl_panel_2.rowHeights = new int[]{23, 0};
+	        gbl_panel_2.columnWeights = new double[]{1.0, 0.0, 0.0, 0.0};
+	        gbl_panel_2.rowWeights = new double[]{0.0, Double.MIN_VALUE};
+	        panel_2.setLayout(gbl_panel_2);
+	        
+	        JLabel txt = new JLabel("message: ");
+	        GridBagConstraints gbc_txt = new GridBagConstraints();
+	        gbc_txt.anchor = GridBagConstraints.WEST;
+	        gbc_txt.insets = new Insets(0, 0, 0, 5);
+	        gbc_txt.gridx = 0;
+	        gbc_txt.gridy = 0;
+	        panel_2.add(txt, gbc_txt);
+	        jtxt = new JTextField();
+	        GridBagConstraints gbc_jtxt = new GridBagConstraints();
+	        gbc_jtxt.anchor = GridBagConstraints.WEST;
+	        gbc_jtxt.insets = new Insets(0, 0, 0, 5);
+	        gbc_jtxt.gridx = 2;
+	        gbc_jtxt.gridy = 0;
+	        panel_2.add(jtxt, gbc_jtxt);
+	        jtxt.setColumns(42);
+	        jtxt.setSize(20,20);
+	        
+	        JPanel pnl_sep = new JPanel();
+	        frame.getContentPane().add(pnl_sep);
+	        
+	        JLabel lblNewLabel = new JLabel("_______________________________________________________________________________");
+	        pnl_sep.add(lblNewLabel);
+	        
+	        JPanel panel_3 = new JPanel();
+	        panel_3.setBorder(new EmptyBorder(2, 0, 0, 0));
+	        panel_1.add(panel_3);
+	        panel_3.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+	        
+	        genera = new JButton("Generate");
+	        panel_3.add(genera);
+	        genera.addActionListener(new ActionListener(){
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -227,53 +227,41 @@ public class Principal extends JFrame implements PropertyChangeListener{
 					long fi = System.currentTimeMillis();
 					taskOutput.append("\nTime of generation: "+sdf.format(fi-ini));
 				}else if(missatgeteclat.isEmpty()==false){
-				
-					//BigInteger introteclat = new BigInteger(missatgeteclat);
 					cc.createMessageBox(missatgeteclat);
 					if(cc.getM().bitLength()<(cc.getPbitLength()-1)){
 						long ini = System.currentTimeMillis();
-						//cc.createMessageBox(missatgeteclat);
-						//str = cc.getMtoString();
 						taskOutput.append("\t\t   OK\n");
 						long fi = System.currentTimeMillis();
 						taskOutput.append("Time of generation: "+sdf.format(fi-ini));
 					}else{
 						taskOutput.setText("");
 						JOptionPane.showMessageDialog(Principal.this, "Message too longer");
-					}
-						
+					}		
 				}
-				//jtxt.setText(str);
-				//gtasks = new GenerateTasks();
-			    //gtasks.addPropertyChangeListener(ParaProvar.this);
-			    //gtasks.execute();
 			}
-        	
-        });
+        	});
         
-        btnXifra = new JButton("Encrypt");
-        panel_3.add(btnXifra);
-        btnXifra.addActionListener(new ActionListener(){
+	        btnXifra = new JButton("Encrypt");
+	        panel_3.add(btnXifra);
+	        btnXifra.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				taskncrypt = new Taskencrypt();
 			  	taskncrypt.addPropertyChangeListener(Principal.this);
 				taskncrypt.execute();
 			}
-        	
-        });
+	        });
         
-        btntally = new JButton("Decrypt");
-        btntally.setEnabled(false);
-        panel_3.add(btntally);
-        
-        mplir = new JLabel("            ");
-        panel_3.add(mplir);
-        
-        btnSimularVoting = new JButton("Voting simulation");
-        panel_3.add(btnSimularVoting);
-        btnSimularVoting.addActionListener(new ActionListener(){
-
+	        btntally = new JButton("Decrypt");
+	        btntally.setEnabled(false);
+	        panel_3.add(btntally);
+	        
+	        mplir = new JLabel("            ");
+	        panel_3.add(mplir);
+	        
+	        btnSimularVoting = new JButton("Voting simulation");
+	        panel_3.add(btnSimularVoting);
+	        btnSimularVoting.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				taskOutput.setText("");
@@ -305,100 +293,60 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				}
 			}
         	
-        });
+        	});
         
-        btntally.addActionListener(new ActionListener(){
+	        btntally.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				/*frame.setCursor(new Cursor(Cursor.WAIT_CURSOR));
-				WaitDisable();
-				try {
-					long ini = System.currentTimeMillis();
-					int[] ids = ParaProvar.this.selectedNumbers();
-					int number=ParaProvar.this.numbMarked(ids);
-					if(number >=3){
-						Integer[] newArray = new Integer[number];
-						int i =0;
-						while (i<ids.length && ids[i]!=-1) {
-							newArray[i] = Integer.valueOf(ids[i]);
-							i++;
-						}
-						for(int ix=0; ix<newArray.length;ix++){
-							System.out.println(newArray[ix]);
-						}						
-						taskOutput.setText("");
-						taskOutput.append("DECRYPTION MESSAGE\n");
-						taskOutput.append("------------------------------------------------\n\n");
-						taskOutput.append("Desxifrant missatge...");
-						cc.useTally(newArray);
-						String sw =cc.getResponsesw()[0];
-						if(sw.equals("9000")){
-							taskOutput.append("\t\t   OK\n");
-						}else{
-							taskOutput.append("\t\t   ERROR: "+sw+"\n");
-						}
-						taskOutput.append("Message esperat:  "+cc.getMtoString());
-						taskOutput.append("\nMissatge obtingut: "+cc.getDECtoString());
-						long fi = System.currentTimeMillis();
-						taskOutput.append("\n\nTime of decryption: "+sdf.format(fi-ini));
-					}else{
-						JOptionPane.showMessageDialog(ParaProvar.this, "Num tally minim 3 SC");
-					}
-				} catch (CardException e) {
-					System.out.println(e);
-				}
-				frame.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-				StartEnable();*/
 				taskdcrypt = new Taskdecrypt();
-			  	taskdcrypt.addPropertyChangeListener(Principal.this);
+			 	taskdcrypt.addPropertyChangeListener(Principal.this);
 				taskdcrypt.execute();
 			}
-        	
-        });
-        frame.getContentPane().add(panel);
+        	});
+        	frame.getContentPane().add(panel);
         
-        pnl_simulate = new JPanel();
-        frame.getContentPane().add(pnl_simulate);
-        pnl_simulate.setLayout(new BoxLayout(pnl_simulate, BoxLayout.Y_AXIS));
-        JPanel pnlpartit1 = new JPanel();
-        pnl_simulate.add(pnlpartit1);
+        	pnl_simulate = new JPanel();
+        	frame.getContentPane().add(pnl_simulate);
+        	pnl_simulate.setLayout(new BoxLayout(pnl_simulate, BoxLayout.Y_AXIS));
+        	JPanel pnlpartit1 = new JPanel();
+        	pnl_simulate.add(pnlpartit1);
         
-        JLabel lblP1 = new JLabel("Votes for the party 1                                            ");
-        pnlpartit1.add(lblP1);
+        	JLabel lblP1 = new JLabel("Votes for the party 1                                            ");
+        	pnlpartit1.add(lblP1);
         
-        spP1 = new JSpinner();
-        spP1.setModel(new SpinnerNumberModel(1, 1, 100, 1));
-        pnlpartit1.add(spP1);
+        	spP1 = new JSpinner();
+        	spP1.setModel(new SpinnerNumberModel(1, 1, 100, 1));
+        	pnlpartit1.add(spP1);
         
-        JPanel pnlpartit2 = new JPanel();
-        pnl_simulate.add(pnlpartit2);
+        	JPanel pnlpartit2 = new JPanel();
+        	pnl_simulate.add(pnlpartit2);
         
-        JLabel lblP2 = new JLabel("Votes for the party 2                                            ");
-        pnlpartit2.add(lblP2);
+        	JLabel lblP2 = new JLabel("Votes for the party 2                                            ");
+        	pnlpartit2.add(lblP2);
         
-        spP2 = new JSpinner();
-        spP2.setModel(new SpinnerNumberModel(1, 1, 100, 1));
-        pnlpartit2.add(spP2);
+        	spP2 = new JSpinner();
+        	spP2.setModel(new SpinnerNumberModel(1, 1, 100, 1));
+        	pnlpartit2.add(spP2);
         
-        JPanel pnlpartit3 = new JPanel();
-        pnl_simulate.add(pnlpartit3);
+        	JPanel pnlpartit3 = new JPanel();
+        	pnl_simulate.add(pnlpartit3);
         
-        JLabel lblP3 = new JLabel("Votes for the party 3                                            ");
-        pnlpartit3.add(lblP3);
+        	JLabel lblP3 = new JLabel("Votes for the party 3                                            ");
+        	pnlpartit3.add(lblP3);
         
         
-        spP3 = new JSpinner();
-        spP3.setModel(new SpinnerNumberModel(1, 1, 100, 1));
-        pnlpartit3.add(spP3);
+        	spP3 = new JSpinner();
+        	spP3.setModel(new SpinnerNumberModel(1, 1, 100, 1));
+        	pnlpartit3.add(spP3);
         
-        JPanel pnl_ok = new JPanel();
-        FlowLayout flowLayout = (FlowLayout) pnl_ok.getLayout();
-        flowLayout.setAlignment(FlowLayout.RIGHT);
-        pnl_simulate.add(pnl_ok);
+        	JPanel pnl_ok = new JPanel();
+        	FlowLayout flowLayout = (FlowLayout) pnl_ok.getLayout();
+        	flowLayout.setAlignment(FlowLayout.RIGHT);
+        	pnl_simulate.add(pnl_ok);
         
-        JButton btnXifra2= new JButton("Encrypt");
-        pnl_ok.add(btnXifra2);
-        btnXifra2.addActionListener(new ActionListener(){
+        	JButton btnXifra2= new JButton("Encrypt");
+       		pnl_ok.add(btnXifra2);
+        	btnXifra2.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				taskencryptsim = new  TaskencryptSim();
@@ -406,11 +354,11 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				taskencryptsim.execute();
 			}
         	
-        });
-        btnRecompte = new JButton("Decrypt");
-        btnRecompte.setEnabled(false);
-        pnl_ok.add(btnRecompte);
-        btnRecompte.addActionListener(new ActionListener(){
+        	});
+	        btnRecompte = new JButton("Decrypt");
+	        btnRecompte.setEnabled(false);
+	        pnl_ok.add(btnRecompte);
+	        btnRecompte.addActionListener(new ActionListener(){
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {		
@@ -418,13 +366,13 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				taskdecryptsim.addPropertyChangeListener(Principal.this);
 				taskdecryptsim.execute();
 			}        	
-        });
+       		 });
 
         
-        JButton btnCancel = new JButton("Cancel");
-        pnl_ok.add(btnCancel);
-        pnl_simulate.setVisible(false);
-        btnCancel.addActionListener(new ActionListener(){
+	        JButton btnCancel = new JButton("Cancel");
+	        pnl_ok.add(btnCancel);
+	        pnl_simulate.setVisible(false);
+	        btnCancel.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				taskOutput.setText("");
@@ -440,35 +388,35 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				spP3.setValue(1);
 				pnl_simulate.setVisible(false);
 				frame.setSize(620, 700);
-			}
-        	
-        });
-
-        JPanel pnlArea = new JPanel();
-        pnlArea.setBorder(new EmptyBorder(10, 0, 0, 0));
-        frame.getContentPane().add(pnlArea);
-        
-        taskOutput = new JTextArea(15, 50);
-        taskOutput.setMargin(new Insets(5,5,5,5));
-        taskOutput.setEditable(false);
-        pnlArea.add(new JScrollPane(taskOutput), BorderLayout.CENTER);
-       
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("("+cc.getTHRESHOLD()+","+cc.getNumShares()+") - ElGamal Threshold Scheme ["+cc.getPbitLength()+" bits]");
+			}        	
+        	});
+	        JPanel pnlArea = new JPanel();
+	        pnlArea.setBorder(new EmptyBorder(10, 0, 0, 0));
+	        frame.getContentPane().add(pnlArea);
+	        
+	        taskOutput = new JTextArea(15, 50);
+	        taskOutput.setMargin(new Insets(5,5,5,5));
+	        taskOutput.setEditable(false);
+	        pnlArea.add(new JScrollPane(taskOutput), BorderLayout.CENTER);
+	       
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.setTitle("("+cc.getTHRESHOLD()+","+cc.getNumShares()+") - ElGamal Threshold Scheme ["+cc.getPbitLength()+" bits]");
 		frame.setBounds(5, 5, 300, 250);
 		this.smartchecks = new ArrayList<JCheckBox>();
 		this.verifsbtns = new ArrayList<JButton>();
 		this.listTerminals();
 		frame.setSize(620, 700);
 		setSize(620, 700);
-        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
-        Dimension ventana = frame.getSize();
-        System.out.println(frame.getSize()+", panatallalaa "+pantalla);
-       
-        frame.setLocation((pantalla.width - ventana.width) / 2,(pantalla.height - ventana.height) / 2);
-		frame.setVisible(true);
+	        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+	        Dimension ventana = frame.getSize();
+	        System.out.println(frame.getSize()+", panatallalaa "+pantalla);
+	       
+	        frame.setLocation((pantalla.width - ventana.width) / 2,(pantalla.height - ventana.height) / 2);
+			frame.setVisible(true);
 	}
-	
+	/**
+	 * Clean the checkboxes 
+	 */	
 	private void cleanCheckBoxes(){
 		for(int i=0;i<this.smartchecks.size();i++){
 			this.smartchecks.get(i).setSelected(false);
@@ -495,8 +443,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 	 * Unlock clickable components 
 	 */
 	private void StartEnable(){
-		//panel.setEnabled(true);
-		//pnl_simulate.setEnabled(true);
 		genera.setEnabled(true);
 		btnSimularVoting.setEnabled(true);
 		btntally.setEnabled(true);
@@ -516,14 +462,13 @@ public class Principal extends JFrame implements PropertyChangeListener{
 	public void propertyChange(PropertyChangeEvent evt) {
 		if ("progress" == evt.getPropertyName()) {
             int progress = (Integer) evt.getNewValue();
-            //inicialitza el generador
+            //initialize the generator
             if(progress==19){
             	if(this.numMax!=1){
             		taskOutput.append("   Smart Card "+0+"\n");
             	}else{
             		taskOutput.append("   Smart Card "+nn+"\n");
             	}
-            	//setProgress(0);
             }else if(progress>=0 && progress < cc.getNumShares()-1 && numMax!=1){
             	taskOutput.append("            "+message);
             	taskOutput.append("------------------------------------------------\n");
@@ -611,32 +556,23 @@ public class Principal extends JFrame implements PropertyChangeListener{
 						frame.setCursor(new Cursor(Cursor.WAIT_CURSOR));
 						taskOutput.setText("");
 						numMax = cc.getCards().length;
-						//task = new Task();
-					  	//task.addPropertyChangeListener(ParaProvar.this);
-						//task.execute();
 						
-						/* **********CONCURRENCIA******************************************************************* */
+						/* **********Concurrency*************** */
 						ArrayList<SCVerification> scverifcationState= new ArrayList<SCVerification>();
 						long inis = System.currentTimeMillis();
 						taskOutput.append("VERIFICATION OF THE SC\n");
-		            	taskOutput.append("------------------------------------------------\n\n");
+		            			taskOutput.append("------------------------------------------------\n\n");
 						
 						for(int i=0;i<cc.getCards().length;i++){
 							nn= i;
 							numMax=1;
 							ids=i;
 							
-						//	task = new Task();
-						//  	task.addPropertyChangeListener(ParaProvar.this);
-						//	task.execute();
-							
 							SCVerification sverifica = new SCVerification(cc, i, i, taskOutput, genera, btntally, btnSimularVoting, btnXifra, verifallbtn, verifsbtns, smartchecks, jtxt);
 							scverifcationState.add(sverifica);
 							sverifica.start();
 						}
-						//boolean deathall=false;
 
-						//System.out.println("NOFINAL:"+nofinal+" mida "+scverifcationState.size());
 						for(int ic=0; ic<scverifcationState.size();ic++){
 							try {
 								scverifcationState.get(ic).join();
@@ -647,7 +583,7 @@ public class Principal extends JFrame implements PropertyChangeListener{
 						
 						long fis = System.currentTimeMillis();
 						taskOutput.append("      Time of verification SC: "+sdf.format(fis-inis));
-						/* ***********FINAL CONCURRENCIA************* */
+						/* ***********End concurrency************* */
 						
 						cleanCheckBoxes();
 						frame.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
@@ -677,10 +613,10 @@ public class Principal extends JFrame implements PropertyChangeListener{
 		}
 		return i;
 	}
-    private String setState(String str){
-   	 	message = str;
-   	 	return this.message;
-    }
+	private String setState(String str){
+		message = str;
+		return this.message;
+	}
 
 	private int[] selectedNumbers(){
 		int[] chequedboxes = new int[this.max];
@@ -692,10 +628,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				j++;
 			}
 		}
-		
-		/*
-		 * prova taula escollits
-		 */
 		for(int i=0;i<chequedboxes.length;i++){
 			System.out.println("escollit "+chequedboxes[i]);
 		}
@@ -721,37 +653,31 @@ public class Principal extends JFrame implements PropertyChangeListener{
 			if(Principal.this.numMax == cc.getNumShares()){
 				long tini = System.currentTimeMillis();
 				taskOutput.append("VERIFICATION OF THE SC\n");
-            	taskOutput.append("------------------------------------------------\n\n");
+            			taskOutput.append("------------------------------------------------\n\n");
 				for(int i=0; i<cc.getCards().length;i++){
 					String sw="";
 					String id="";
 					try {
 						cc.cardConnection(i, cc.getCards()[i]); 
 						cc.appletSelectionInitialization(true, i);
-						//cc.shareVerification(i);
 						taskOutput.append("         Verifying share...\n");
 						cc.share1Verification(i);
 						id = cc.getResponsesw()[0];
 						taskOutput.append("         Verifying share commitment...\n");
 						cc.sharecommitmentVerification(i);
 						sw = cc.getResponsesw()[0];
-						//id = cc.getResponsesw()[1];
 						cc.cardDisconnection(i);
 					} catch (CardException e) {
 						System.out.println(e);
 					}
 					long tfi = System.currentTimeMillis();
 					if(id.equals("9000") && sw.equals("9000")){
-					//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" es correcta.");
 						verifss="SC verified: \tOk.\n            Time of verification: "+sdf.format(tfi-tini);
 					}else if(!(id.equals("9000")) && sw.equals("9000")){
-					//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" ha fallat. Error: "+sw);
 						verifss="SC verified: \tError: "+id+".\n";
 					}else if(!(sw.equals("9000")) && id.equals("9000")){
-					//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" ha fallat. Error: "+sw);
 						verifss="SC verified: \tError: "+id+".\n";
 					}else{
-					//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" ha fallat. Error: "+sw);
 						verifss="SC verified: \tError: "+id+", and error: "+sw+".\n";
 					}
 					Principal.this.setState(verifss);
@@ -764,30 +690,24 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				try {
 					cc.cardConnection(ids, cc.getCards()[nn]); 
 					cc.appletSelectionInitialization(true, ids);
-					//cc.shareVerification(ids);
 					taskOutput.append("         Verifying share...\n");
 					cc.share1Verification(ids);
 					id = cc.getResponsesw()[0];
 					taskOutput.append("         Verifying share commitment...\n");
 					cc.sharecommitmentVerification(ids);
 					sw = cc.getResponsesw()[0];
-					//id = cc.getResponsesw()[1];
 					cc.cardDisconnection(ids);
 				} catch (CardException e) {
 					e.printStackTrace();
 				}
 				long tfi = System.currentTimeMillis();
 				if(id.equals("9000") && sw.equals("9000")){
-					//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" es correcta.");
 					verifss="SC verified: \tOk.\n            Time of verification: "+sdf.format(tfi-tini);
 				}else if(!(id.equals("9000")) && sw.equals("9000")){
-				//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" ha fallat. Error: "+sw);
 					verifss="SC verified: \tError: "+id+".\n";
 				}else if(!(sw.equals("9000")) && id.equals("9000")){
-				//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" ha fallat. Error: "+sw);
 					verifss="SC verified: \tError: "+sw+".\n";
 				}else{
-				//JOptionPane.showMessageDialog(UseCases.this,"Verificacio SC: "+id+" ha fallat. Error: "+sw);
 					verifss="SC verified: \tError: "+id+", and error: "+sw+".\n";
 				}
 				Principal.this.setState(verifss);
@@ -797,12 +717,10 @@ public class Principal extends JFrame implements PropertyChangeListener{
 		}
 		@Override
         public void done() {
-			//Waiting.this.
 			Toolkit.getDefaultToolkit().beep();
             setCursor(null); //turn off the wait cursor
             frame.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
             StartEnable();
-            //taskOutput.append("Fi!\n");
 		}
 	 }
 
@@ -815,13 +733,9 @@ public class Principal extends JFrame implements PropertyChangeListener{
 			if(missatgeteclat.equals("")){
 				JOptionPane.showMessageDialog(Principal.this, "Firstly generate the message");
 			}else{
-				//String str ="";
 				long ini = System.currentTimeMillis();		
 				cc.createMessageBox(missatgeteclat);
 				if(cc.getM().bitLength()<cc.getPbitLength()){
-					//cc.createMessageBox(missatgeteclat);
-					//str = cc.getMtoString();
-					//taskOutput.append("\t\t   OK\n");
 					cc.createMessageBox(missatgeteclat);
 					taskOutput.setText("");
 					taskOutput.append("MESSAGE ENCRYPTION\n");
@@ -869,8 +783,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 					int[] ids = Principal.this.selectedNumbers();
 					int number=Principal.this.numbMarked(ids);
 					if(number < cc.getTHRESHOLD()){
-						//JOptionPane.showMessageDialog(ParaProvar.this, "Choose "+cc.getTHRESHOLD()+" o more SC");
-						
 						for(int i=0; i<cc.getTHRESHOLD();i++){
 							smartchecks.get(i).setSelected(true);
 						}
@@ -905,10 +817,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 						}else{
 							taskOutput.append("\n      Message decrypted...\t\t   ERROR: "+sw+"\n");
 						}
-						//taskOutput.append("\nExpected message:  "+cc.getMtoString());
-						//taskOutput.append("\nReturned message: "+cc.getDECtoString());
-	
-
 						if(cc.getMtoString().equals(cc.getDECtoString())){
 							if(missatgeteclat.isEmpty()){
 								taskOutput.append("\n      Expected message:  "+cc.getMtoString());
@@ -919,13 +827,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 							}
 							taskOutput.append("\n\n      Succesfully decryption");
 						}else{
-							/*if(missatgeteclat.isEmpty()){
-								taskOutput.append("\nExpected message:  "+cc.getMtoString());
-								taskOutput.append("\nReturned message: "+cc.getDECtoString());
-							}else{
-								taskOutput.append("\nExpected message:  "+missatgeteclat);
-								taskOutput.append("\nReturned message: "+missatgeteclat);
-							}*/
 							taskOutput.append("\n\n      Unsuccesfully decryption");
 						}
 						long fi = System.currentTimeMillis();
@@ -960,8 +861,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 					int np3= (Integer)spP3.getValue();
 					System.out.println("\n------------------------\n"+np1+","+np2+","+np3);
 					taskOutput.setText("");
-					//taskOutput.append("0. Message...");
-					//taskOutput.append("\n   "+cc.getMtoString()+"\n");
 					taskOutput.append("1. Encrypting party vots...");
 					for(int i=0; i<np1;i++){
 						BigInteger[] n=null;
@@ -970,9 +869,7 @@ public class Principal extends JFrame implements PropertyChangeListener{
 						}else{
 							n =cc.Z_Encrypt(false,primers.get(0).toString());
 						}
-						//taskOutput.append("\n   "+cc.byteArrayTohexString(n[1].toByteArray()));
 						taskOutput.append("\n   vote "+(i+1)+": "+cc.byteArrayTohexString(n[0].toByteArray()));
-						//taskOutput.append("\n   "+cc.byteArrayTohexString(n[1].toByteArray()));
 					}
 					taskOutput.append("\n\n   y1total:"+cc.getY1total());
 					taskOutput.append("\n   y2total:"+cc.getY2total());
@@ -1027,7 +924,6 @@ public class Principal extends JFrame implements PropertyChangeListener{
 				int[] ids = Principal.this.selectedNumbers();
 				int number=Principal.this.numbMarked(ids);
 				if(number < cc.getTHRESHOLD()){
-					//JOptionPane.showMessageDialog(ParaProvar.this, "Choose "+cc.getTHRESHOLD()+" o more SC");
 					for(int i=0; i<cc.getTHRESHOLD();i++){
 						smartchecks.get(i).setSelected(true);
 					}
