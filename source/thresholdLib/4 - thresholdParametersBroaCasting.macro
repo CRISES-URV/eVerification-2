@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Macro xmlns="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="thresholdParametersBroaCasting" xsi:schemaLocation="http://www.gi-de.com/offcard/gptasks/1.0 TaskFile.xsd">
+ <Tasks>
+  <SendApduTask>
+   <Command>80 1B 00 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1B 01 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 19 00 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 19 01 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 19 02 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 19 03 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 19 04 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1C 00 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1C 01 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1C 02 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1C 03 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1C 04 00</Command>
+  </SendApduTask>
+  <SendApduTask>
+   <Command>80 1A 00 00</Command>
+  </SendApduTask>
+ </Tasks>
+</Macro>
