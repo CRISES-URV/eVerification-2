@@ -45,8 +45,8 @@ package cat.urv.crises.smartcard.elgamal;
  * Ministry of Industry, Commerce and Tourism (through the development program AVANZA 
  * I+D). We would like to thank Scytl for their support and to the Ministery for the 
  * needed founding required to carry it out.
- * The Beta version of this code has been implemented by Jordi Castellà, Vicenç Creus, 
- * Roger Jardí and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
+ * The Beta version of this code has been implemented by Jordi Castellï¿½, Vicenï¿½ Creus, 
+ * Roger Jardï¿½ and Jordi Pujol ([jordi.castella,vicenc.creus,roger.jardi,jordi.pujol]@urv.cat).
  * 
  */
 import java.awt.Dimension;
@@ -78,7 +78,7 @@ import javax.swing.BoxLayout;
 /**
  * Interface that permit to choose the options for create the threshold scheme
  * 
- * @author Roger Jardí Cedó {@link roger.jardi@urv.cat} & Vicenç Creus Garcia {@link vicens.creus@urv.cat}
+ * @author Roger Jardï¿½ Cedï¿½ {@link roger.jardi@urv.cat} & Vicenï¿½ Creus Garcia {@link vicens.creus@urv.cat}
  *
  */
 public class UserGUI extends JFrame {
@@ -127,7 +127,7 @@ public class UserGUI extends JFrame {
 		JLabel lblmida = new JLabel("Enter the key size:                                           ");
 		contentPane.add(lblmida);
 		
-		//numero de terminals conectats
+		//number of terminals connected
 		for(int i=0;i<max;i++){
 			if (terminal[i] == null){
 				factory = TerminalFactory.getDefault(); //uses SunPCSC; the unique available to interact with PC/SC stack.
@@ -227,15 +227,12 @@ public class UserGUI extends JFrame {
 		this.smartchecks = new ArrayList<JCheckBox>();
 		for(int i=0;i<listerminals2.length;i++){
 			JCheckBox check =new JCheckBox(listerminals2[i]);
-			//check.setBorder(new EmptyBorder(9,15,0,0));
 			
 			this.smartchecks.add(check);
-			//contentPane.add(check);
 			if(check.getText().contains("no present")==false){
 				check.setText(check.getText().substring(0, check.getText().length()-7));
 				panel_checks.add(check);
 			}
-			//panel_checks.add();
 			final int n=i;
 			this.smartchecks.get(i).addActionListener(new ActionListener(){
 				@Override
@@ -273,9 +270,6 @@ public class UserGUI extends JFrame {
 						JCheckBox check =new JCheckBox(listerminals2[i]);
 						UserGUI.this.smartchecks.add(check);
 						
-						//contentPane.add(check);
-						//panel_checks.add(check);
-						//contentPane.add(check);
 						if(check.getText().contains("no present")==false){
 							check.setText(check.getText().substring(0, check.getText().length()-7));
 							panel_checks.add(check);
@@ -294,16 +288,10 @@ public class UserGUI extends JFrame {
 					}
 					
 					UserGUI.this.panel_checks.setVisible(true);
-					
-					
-					
-					//comboBox
 					comboternms.removeAllItems();
 					for(int i=0;i<listerminals4.length;i++){
 						comboternms.addItem(listerminals4[i]);
-					}
-					
-					
+					}					
 				} catch (CardException e) {
 					System.out.println(e);
 				}
@@ -327,13 +315,13 @@ public class UserGUI extends JFrame {
 				int number=UserGUI.this.numbMarked(ids);
 				if(number<Integer.parseInt((String)combosc.getSelectedItem()) && number>0){
 					int n=Integer.parseInt((String)combosc.getSelectedItem())-number;
-					JOptionPane.showMessageDialog(UserGUI.this, /*"Nomes has introduit "+number+" */"You have to enter "+n+" more SC.");
+					JOptionPane.showMessageDialog(UserGUI.this, "You have to enter "+n+" more SC.");
 				}else if(number>Integer.parseInt((String)combosc.getSelectedItem()) && number>0){
 					int n=number-Integer.parseInt((String)combosc.getSelectedItem());
 					if(n==1){
-						JOptionPane.showMessageDialog(UserGUI.this, /*"Has introduit "+number+*/"You have entered "+n+" more SC.");
+						JOptionPane.showMessageDialog(UserGUI.this, "You have entered "+n+" more SC.");
 					}else{
-						JOptionPane.showMessageDialog(UserGUI.this, /*"Has introduit "+number+*/"You have entered "+n+" more SC.");
+						JOptionPane.showMessageDialog(UserGUI.this, "You have entered "+n+" more SC.");
 					}
 				}else if(ids[0]==-1){
 					JOptionPane.showMessageDialog(UserGUI.this, "You do not enter the generator");
@@ -424,8 +412,10 @@ public class UserGUI extends JFrame {
 		Object selected[] = is.getSelectedObjects();
 		return ((selected.length == 0) ? "null" : (String)selected[0]);
 	}
+	/**
+	 * Get terminals selected by the user 
+	 */
 	private void selectedInList(){
-		//borrar marcatge anterior
 		cleanCheckBoxes();
 		for(int i=1;i<this.listerminals.length;i++){
 			if(!(escollit.equals("...")) && escollit.equals(this.listerminals[i])){
