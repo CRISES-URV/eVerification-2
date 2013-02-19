@@ -7,7 +7,7 @@ the Spanish Ministry of Industry, Commerce and Tourism (through the development 
 <a href="https://www.planavanza.es" target="_blank"><img src="https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logo_planAvanza2.png"  width="300" height="150">
 
 <center><table border="0">
-<tr><td><a href="http://www.scytl.es" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png width="170" border="0"></td>
+<tr><td><a href="http://www.scytl.es" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoScytl.png width="160" border="0"></td>
 <td><a href="http://www.urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoURV.png border="0"></td>
 <td><a href="http://crises-deim.urv.cat" target="_blank"><img src=https://raw.github.com/CRISES-URV/eVerification-2/master/figures/logoCrises.png width="140" height="50" border="0"></td></tr>
 </table></center>
@@ -65,8 +65,8 @@ Once the applet has been installed in each SC, our application, following the pr
 			- q: CLA=90, INS=11, P1-P2=00, Lc=20 and data=q. 
 			- g: CLA=90, INS=02, P1-P2=00, Lc=20 and data=g. 
 
-		3. In order to securely build the private and public key, which are requiered by ElGamal cryptosystem, into the SC, 
-		   the APDUs are as follows:
+		3. In order to securely build the private and public key, which are requiered by ElGamal cryptosystem, into the 
+		   SC, the APDUs are as follows:
 			- Pk: CLA=80, INS=03, P1-P2=00.
 			- Sk: CLA=80, INS=04, P1-P2=00.
 			- The SC generator takes the id=0, this is stored by APDU: CLA=80, INS=12, P1-P2=00, Lc=1, DATA=id, Le=00.
